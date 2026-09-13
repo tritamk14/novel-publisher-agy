@@ -1,0 +1,593 @@
+# ============================================================
+# registry.yaml — Hồ sơ nhân vật《港岛心蔷》
+# Tổng hợp từ quét toàn bộ 95 chương
+# ============================================================
+
+characters:
+
+  # ==================== NHÂN VẬT CHÍNH ====================
+
+  - id: "fl_tham_tuong"
+    name_original: "沈蔷"
+    name_translated: "Thẩm Tường"
+    name_short: "Thẩm Tường"
+    aliases:
+      - original: "蔷蔷"
+        translated: "Tường Tường"
+      - original: "妹妹仔"
+        translated: "bé"
+      - original: "Irene"
+        translated: "Irene"
+      - original: "Irene小姐"
+        translated: "Irene tiểu thư"
+      - original: "沈小姐"
+        translated: "Thẩm tiểu thư"
+      - original: "沈老板"
+        translated: "Thẩm lão bản"
+      - original: "蔷蔷姐"
+        translated: "chị Tường Tường"
+      - original: "宋太太"
+        translated: "phu nhân Tống"
+      - original: "宋少奶奶"
+        translated: "thiếu nãi nãi nhà Tống"
+      - original: "囡囡"
+        translated: "con gái"
+      - original: "bb仔"
+        translated: "bé"
+    gender: "female"
+    role: "female_lead"
+    age: "22 (đầu truyện) → 28+ (cuối truyện)"
+    occupation: "Nhà thiết kế trang sức, đồng sáng lập Quân Hợp (君合)"
+    personality: "Kiên cường, tài năng, ban đầu nhẫn nhịn và thiếu tự tin trong tình yêu, sau dần độc lập và mạnh mẽ. Ngoài mềm trong cứng."
+    appearance: "Xinh đẹp, khuôn mặt nhỏ nhắn, ánh mắt trong sáng"
+    first_appearance: "chapter_0001"
+
+    self_reference:
+      default: "tôi"
+      formal: "tôi"
+      intimate: "em"
+      internal: "cô"
+
+    notes: |
+      - Tên 蔷 nghĩa là hoa tường vi (蔷薇) — biểu tượng xuyên suốt truyện
+      - Tên nghệ danh quốc tế: Irene
+      - Kỹ thuật đặc trưng: hoa ty khảm nhương (花丝镶嵌 - filigree inlay)
+      - Mẹ gọi bằng "囡囡" → dịch "con gái" (cách gọi thân mật vùng Giang Nam)
+      - Tống Bạc Lễ gọi bằng "妹妹仔" → dịch "bé" (tiếng Quảng, là cách gọi đặc trưng của anh)
+      - Sau khi kết hôn còn được gọi: phu nhân Tống, Thẩm lão bản
+
+  - id: "ml_tong_bac_le"
+    name_original: "宋泊礼"
+    name_translated: "Tống Bạc Lễ"
+    name_short: "Tống Bạc Lễ"
+    aliases:
+      - original: "宋董"
+        translated: "Tổng Tống"
+      - original: "宋少"
+        translated: "Tống thiếu"
+      - original: "宋少爷"
+        translated: "Tống thiếu gia"
+      - original: "太子爷"
+        translated: "thái tử gia"
+      - original: "宋先生"
+        translated: "Tống tiên sinh"
+      - original: "小宋"
+        translated: "Tiểu Tống"
+      - original: "港城太子爷"
+        translated: "thái tử gia Cảng thành"
+      - original: "资本家"
+        translated: "tư bản gia"
+    gender: "male"
+    role: "male_lead"
+    age: "26 (đầu truyện) → 30+ (cuối truyện)"
+    occupation: "Thừa kế Tống thị tập đoàn, chủ thương hiệu Eternal, sáng lập Ưu Nghệ truyền thông"
+    personality: "Bề ngoài lạnh lùng, lý trí, phong độ thần sĩ. Bên trong si tình, chấp niệm. Ban đầu coi nhẹ tình cảm, sau khi mất mới hiểu giá trị, dốc hết sức truy đuổi."
+    appearance: "Cao, tuấn lãng, ngũ quan sắc sảo, phong thái quý tộc"
+    first_appearance: "chapter_0001"
+
+    self_reference:
+      default: "tôi"
+      formal: "tôi"
+      intimate: "anh"
+      internal: "anh"
+
+    notes: |
+      - Biển số xe: Cảng 1 (港1) — biểu tượng quyền lực tối thượng Hồng Kông
+      - Cách gọi đặc trưng cho nữ chính: "妹妹仔" (bé) — tiếng Quảng Đông
+      - Ban đầu coi cô là "trẻ con", sau này "bé" trở thành lời yêu thương
+      - Tên trang viên anh mua: 心蔷 (Tâm Tường) = "trong sâu thẳm trái tim, là Thẩm Tường"
+      - Hút xì gà, uống rượu, đua ngựa — phong cách thượng lưu Hồng Kông
+      - Ngoài miệng bình thản "ok, good luck" nhưng thực ra không buông được
+
+  # ==================== NHÂN VẬT PHỤ QUAN TRỌNG ====================
+
+  - id: "sp_vu_kien"
+    name_original: "于建"
+    name_translated: "Vu Kiến"
+    name_short: "Vu Kiến"
+    aliases:
+      - original: "于总"
+        translated: "Tổng Vu"
+      - original: "于总监"
+        translated: "Tổng giám đốc Vu"
+      - original: "于经理"
+        translated: "Quản lý Vu"
+    gender: "male"
+    role: "supporting"
+    occupation: "Đồng sáng lập Quân Hợp (phụ trách kinh doanh)"
+    personality: "Thực tế, chăm chỉ, trung thành, hơi hài hước"
+    first_appearance: "chapter_0023"
+
+    self_reference:
+      default: "tôi"
+      internal: "anh"
+
+    notes: |
+      - Ban đầu là giám đốc bán hàng ở Urna, sau nghỉ việc cùng Thẩm Tường lập Quân Hợp
+      - MC đám cưới Tống Bạc Lễ và Thẩm Tường
+      - Đối tác kinh doanh đáng tin cậy
+
+  - id: "sp_trang_phuong_khiet"
+    name_original: "庄芳洁"
+    name_translated: "Trang Phương Khiết"
+    name_short: "Trang Phương Khiết"
+    aliases:
+      - original: "阿芳"
+        translated: "A Phương"
+      - original: "妈妈"
+        translated: "mẹ"
+      - original: "妈"
+        translated: "mẹ"
+    gender: "female"
+    role: "supporting"
+    occupation: "Nội trợ, sống ở Tô Châu"
+    personality: "Yêu thương con, lo lắng, mạnh mẽ dù bị chồng cũ phản bội"
+    first_appearance: "chapter_0009"
+
+    self_reference:
+      default: "mẹ"
+      internal: "bà"
+
+    notes: |
+      - Mẹ ruột Thẩm Tường, vợ cũ Thẩm An
+      - Sống ở thị trấn nước Giang Nam (Tô Thành)
+      - Gọi con gái bằng "囡囡" (con gái) — cách gọi đặc trưng vùng Giang Nam
+      - Ban đầu phản đối con gái khởi nghiệp, sau được Tống Bạc Lễ thuyết phục
+      - Tên thương hiệu 芳禧 (Phương Hi) lấy từ chữ 芳 trong tên bà
+
+  - id: "sp_tran_cuong"
+    name_original: "陈秘书 / 陈强"
+    name_translated: "Trần thư ký / Trần Cường"
+    name_short: "Trần thư ký"
+    aliases:
+      - original: "陈秘书"
+        translated: "Trần thư ký"
+      - original: "陈叔"
+        translated: "chú Trần"
+      - original: "陈强"
+        translated: "Trần Cường"
+    gender: "male"
+    role: "supporting"
+    occupation: "Thư ký / trợ lý riêng của Tống Bạc Lễ"
+    personality: "Trung thành, tế nhị, quan sát tinh tế"
+    first_appearance: "chapter_0005"
+
+    self_reference:
+      default: "tôi"
+      internal: "anh"
+
+    notes: |
+      - Gọi Thẩm Tường bằng "Thẩm tiểu thư" (沈小姐)
+      - Gọi Tống Bạc Lễ bằng "Tổng Tống" (宋董) hoặc "Tống thiếu gia" (宋少爷)
+      - Thẩm Tường gọi bằng "chú Trần" (陈叔) — thể hiện sự thân mật
+
+  - id: "sp_cung_van_van"
+    name_original: "龚文文"
+    name_translated: "Cung Văn Văn"
+    name_short: "Văn Văn"
+    aliases:
+      - original: "文文"
+        translated: "Văn Văn"
+    gender: "female"
+    role: "supporting"
+    occupation: "Bạn đại học"
+    personality: "Thẳng tính, bạo dạn, bảo vệ bạn bè, nhiều kinh nghiệm tình cảm"
+    first_appearance: "chapter_0009"
+
+    self_reference:
+      default: "tớ"
+      internal: "cô"
+
+    notes: |
+      - Bạn cùng phòng đại học với Thẩm Tường
+      - Hay lo lắng và bảo vệ Thẩm Tường
+      - Giọng nói thẳng thắn, hài hước
+
+  - id: "sp_tong_mau"
+    name_original: "宋母 / 宋夫人"
+    name_translated: "Tống phu nhân"
+    name_short: "Tống phu nhân"
+    aliases:
+      - original: "宋母"
+        translated: "Tống mẫu"
+      - original: "宋夫人"
+        translated: "Tống phu nhân"
+    gender: "female"
+    role: "supporting"
+    personality: "Quý tộc, ban đầu coi trọng môn đăng hộ đối, sau chấp nhận Thẩm Tường khi thấy con trai thay đổi"
+    first_appearance: "chapter_0013"
+
+    self_reference:
+      default: "tôi"
+      intimate: "mẹ"
+      internal: "bà"
+
+    notes: |
+      - Tặng vòng tay gia truyền cho Thẩm Tường = dấu hiệu chấp nhận
+      - Tặng lì xì 10001 nghĩa "vạn lý đào nhất" (một trong vạn)
+
+  - id: "sp_hua_ngan_quyet"
+    name_original: "许岸决"
+    name_translated: "Hứa Ngạn Quyết"
+    name_short: "Hứa Ngạn Quyết"
+    gender: "male"
+    role: "supporting"
+    personality: "Công tử chơi bời, tinh mắt, trung thành với bạn"
+    first_appearance: "chapter_0005"
+
+    self_reference:
+      default: "tôi"
+      internal: "hắn"
+
+    notes: |
+      - Bạn thân từ nhỏ của Tống Bạc Lễ
+      - Gia đình kinh doanh câu lạc bộ cao cấp
+      - Gọi Tống Bạc Lễ bằng "Tống thiếu" (宋少)
+
+  # ==================== PHẢN DIỆN ====================
+
+  - id: "ant_tham_an"
+    name_original: "沈安"
+    name_translated: "Thẩm An"
+    name_short: "Thẩm An"
+    aliases:
+      - original: "沈董"
+        translated: "Tổng Thẩm"
+      - original: "沈先生"
+        translated: "Thẩm tiên sinh"
+    gender: "male"
+    role: "antagonist"
+    personality: "Xảo quyệt, vị kỷ, giả chết trốn nợ rồi quay lại giàu có muốn mua chuộc tình thương"
+    first_appearance: "chapter_0009"
+
+    self_reference:
+      default: "tôi"
+      intimate: "bố"
+      internal: "hắn"
+
+    notes: |
+      - Cha ruột Thẩm Tường, chồng cũ Trang Phương Khiết
+      - Giả chết trốn nợ, bỏ rơi vợ con
+      - Quay lại giàu có, muốn nhận lại con nhưng bị Thẩm Tường từ chối
+      - Thẩm Tường gọi bằng "Thẩm tiên sinh" (沈先生) — từ chối quan hệ cha con
+      - Từng tài trợ học bổng cho Thẩm Tường nhưng thực chất là để hối lộ hiệu trưởng Chu
+
+  - id: "ant_chu_hao"
+    name_original: "周浩"
+    name_translated: "Chu Hạo"
+    name_short: "Chu Hạo"
+    aliases:
+      - original: "周总"
+        translated: "Tổng Chu"
+    gender: "male"
+    role: "antagonist"
+    personality: "Cơ hội, nhỏ nhen, vi lợi, nuốt lời"
+    first_appearance: "chapter_0025"
+
+    self_reference:
+      default: "tôi"
+      internal: "hắn"
+
+    notes: |
+      - Giám đốc tập đoàn Urna, cấp trên cũ của Thẩm Tường
+      - Đe dọa đưa Thẩm Tường vào danh sách đen ở Thượng Hải
+      - Sau cố phá hoại danh tiếng Thẩm Tường
+
+  - id: "ant_chu_cuong"
+    name_original: "朱强"
+    name_translated: "Chu Cường"
+    name_short: "Chu Cường"
+    aliases:
+      - original: "朱校长"
+        translated: "Hiệu trưởng Chu"
+      - original: "朱伯"
+        translated: "Chu bá"
+    gender: "male"
+    role: "antagonist"
+    personality: "Coi trọng địa vị, tham nhũng, thao túng"
+    first_appearance: "chapter_0017"
+
+    self_reference:
+      default: "tôi"
+      internal: "hắn"
+
+    notes: |
+      - Cựu hiệu trưởng Đại học Hồng Kông (HKU)
+      - Giữ bằng tốt nghiệp Thẩm Tường làm con tin để ép cô giúp hắn vào Jockey Club qua Tống Bạc Lễ
+      - Gọi Tống Bạc Lễ bằng "Bạc Lễ" (泊礼) giả vờ thân mật
+      - Tống Bạc Lễ gọi bằng "Chu bá" (朱伯) ban đầu lịch sự, sau bỏ
+
+  # ==================== NHÂN VẬT PHỤ ====================
+
+  - id: "sp_tu_tien"
+    name_original: "徐羡"
+    name_translated: "Từ Tiện"
+    name_short: "Từ Tiện"
+    gender: "female"
+    role: "supporting"
+    personality: "Bạo dạn, hay nói, tò mò về giới thượng lưu"
+    first_appearance: "chapter_0002"
+
+    self_reference:
+      default: "tớ"
+      internal: "cô"
+
+    notes: |
+      - Bạn cùng phòng đại học với Thẩm Tường
+
+  - id: "sp_lieu_ky_ky"
+    name_original: "廖琪琪"
+    name_translated: "Liêu Kỳ Kỳ"
+    name_short: "Liêu Kỳ Kỳ"
+    gender: "female"
+    role: "minor"
+    first_appearance: "chapter_0009"
+
+    self_reference:
+      default: "tớ"
+      internal: "cô"
+
+    notes: |
+      - Bạn cùng phòng đại học với Thẩm Tường
+
+  - id: "sp_tran_kieu_kieu"
+    name_original: "陈娇娇"
+    name_translated: "Trần Kiều Kiều"
+    name_short: "Kiều Kiều"
+    aliases:
+      - original: "娇娇"
+        translated: "Kiều Kiều"
+    gender: "female"
+    role: "supporting"
+    personality: "Con nhà giàu, ban đầu lười biếng nhưng thân thiện, thích ngồi lê"
+    first_appearance: "chapter_0024"
+
+    self_reference:
+      default: "tớ"
+      internal: "cô"
+
+    notes: |
+      - Thực tập sinh dưới quyền Thẩm Tường tại Urna
+
+  - id: "sp_luu_huong_duy"
+    name_original: "刘向维"
+    name_translated: "Lưu Hướng Duy"
+    name_short: "Hướng Duy"
+    aliases:
+      - original: "向维"
+        translated: "Hướng Duy"
+    gender: "male"
+    role: "minor"
+    personality: "Nhút nhát, ham học"
+    first_appearance: "chapter_0024"
+
+    self_reference:
+      default: "tôi"
+      internal: "anh"
+
+  - id: "sp_miki"
+    name_original: "miki"
+    name_translated: "Miki"
+    name_short: "Miki"
+    gender: "female"
+    role: "minor"
+    personality: "Thân thiện, rõ ràng ranh giới"
+    first_appearance: "chapter_0010"
+
+    self_reference:
+      default: "tôi"
+      internal: "cô"
+
+    notes: |
+      - Người mẫu chân dài, từng dính scandal giả với Tống Bạc Lễ
+      - Scandal này là giọt nước tràn ly khiến Thẩm Tường chia tay
+      - Sau trở thành khách hàng trang sức của Thẩm Tường
+
+  - id: "sp_nhuoc_chi"
+    name_original: "若芝"
+    name_translated: "Nhược Chi"
+    name_short: "Nhược Chi"
+    gender: "female"
+    role: "minor"
+    personality: "Kiêu ngạo, coi thường người thấp hơn"
+    first_appearance: "chapter_0006"
+
+    self_reference:
+      default: "tôi"
+      internal: "cô ta"
+
+    notes: |
+      - Tiểu thư giới thượng lưu, cố tình chế giễu Thẩm Tường trên bàn mạt chược
+      - Gọi Tống Bạc Lễ bằng "Bạc Lễ ca ca" (泊礼哥哥) — tỏ vẻ thân mật
+
+  - id: "sp_bella"
+    name_original: "Bella"
+    name_translated: "Bella"
+    name_short: "Bella"
+    aliases:
+      - original: "Bella姐"
+        translated: "chị Bella"
+    gender: "female"
+    role: "minor"
+    personality: "Xảo quyệt, cướp công"
+    first_appearance: "chapter_0004"
+
+    self_reference:
+      default: "tôi"
+      internal: "cô ta"
+
+    notes: |
+      - Cấp trên của Thẩm Tường tại công ty trang sức, cố đánh cắp bản thiết kế
+
+  - id: "sp_tong_phu"
+    name_original: "宋父"
+    name_translated: "Tống phụ"
+    name_short: "Tống phụ"
+    gender: "male"
+    role: "minor"
+    personality: "Nghiêm khắc, truyền thống"
+    first_appearance: "chapter_0084"
+
+    self_reference:
+      default: "tôi"
+      intimate: "bố"
+      internal: "ông"
+
+  - id: "sp_tong_ong"
+    name_original: "宋爷爷 / 宋老爷子"
+    name_translated: "ông nội Tống"
+    name_short: "ông nội Tống"
+    aliases:
+      - original: "宋老爷子"
+        translated: "lão gia Tống"
+      - original: "阿爷"
+        translated: "ông nội"
+      - original: "阿公"
+        translated: "ông"
+    gender: "male"
+    role: "minor"
+    personality: "Truyền thống, nghiêm khắc nhưng yêu thương cháu"
+    first_appearance: "chapter_0042"
+
+    self_reference:
+      default: "ông"
+      internal: "ông"
+
+    notes: |
+      - Đặt tên cho hai đứa cháu sinh đôi
+      - Tống Bạc Lễ gọi bằng "A Da" (阿爷) hoặc "A Công" (阿公) — tiếng Quảng
+
+  - id: "sp_hua_huong_lam"
+    name_original: "许向蓝"
+    name_translated: "Hứa Hướng Lam"
+    name_short: "Hứa Hướng Lam"
+    aliases:
+      - original: "许姐"
+        translated: "chị Hứa"
+    gender: "female"
+    role: "minor"
+    occupation: "Quản lý truyền thông Ưu Nghệ"
+    first_appearance: "chapter_0070"
+
+    self_reference:
+      default: "tôi"
+      internal: "cô"
+
+  - id: "sp_chung_hoa"
+    name_original: "钟骅"
+    name_translated: "Chung Hoa"
+    name_short: "Chung Hoa"
+    gender: "male"
+    role: "minor"
+    personality: "Tán tỉnh Thẩm Tường, bị Tống Bạc Lễ cảnh cáo"
+    first_appearance: "chapter_0070"
+
+    self_reference:
+      default: "tôi"
+      internal: "hắn"
+
+  - id: "sp_trong_lam"
+    name_original: "仲琳"
+    name_translated: "Trọng Lâm"
+    name_short: "Trọng Lâm"
+    gender: "female"
+    role: "minor"
+    personality: "Tự tin, dựa vào quan hệ gia đình"
+    first_appearance: "chapter_0048"
+
+    self_reference:
+      default: "tôi"
+      internal: "cô"
+
+    notes: |
+      - Nhà thiết kế từ tập đoàn Summer, đối thủ của Thẩm Tường
+
+  - id: "sp_dinh_dat_minh"
+    name_original: "丁逸明"
+    name_translated: "Đinh Dật Minh"
+    name_short: "Đinh Dật Minh"
+    gender: "male"
+    role: "minor"
+    personality: "Idol nổi tiếng"
+    first_appearance: "chapter_0070"
+
+    self_reference:
+      default: "tôi"
+      internal: "anh"
+
+    notes: |
+      - Gây nên cơn ghen tuông của Tống Bạc Lễ
+
+  # ==================== THẾ HỆ SAU (CHƯƠNG CUỐI) ====================
+
+  - id: "sp_tong_tue_hoai"
+    name_original: "宋岁淮"
+    name_translated: "Tống Tuế Hoài"
+    name_short: "Chiêu Chiêu"
+    aliases:
+      - original: "昭昭"
+        translated: "Chiêu Chiêu"
+      - original: "大宝"
+        translated: "Đại Bảo"
+      - original: "哥哥"
+        translated: "anh"
+    gender: "male"
+    role: "supporting"
+    personality: "Điềm tĩnh, ngoan, giống bố"
+    first_appearance: "chapter_0086"
+
+    self_reference:
+      default: "con"
+      internal: "bé"
+
+    notes: |
+      - Con trai sinh đôi (anh), con của Tống Bạc Lễ và Thẩm Tường
+      - Tên hiệu: 昭昭 (Chiêu Chiêu) — "chiêu chiêu doanh nhu"
+
+  - id: "sp_tong_tue_du"
+    name_original: "宋岁悠"
+    name_translated: "Tống Tuế Du"
+    name_short: "Niệm Niệm"
+    aliases:
+      - original: "念念"
+        translated: "Niệm Niệm"
+      - original: "小宝"
+        translated: "Tiểu Bảo"
+      - original: "妹妹"
+        translated: "em"
+      - original: "小公主"
+        translated: "tiểu công chúa"
+    gender: "female"
+    role: "supporting"
+    personality: "Nhõng nhẽo, đáng yêu, hay khóc, được bố cưng hết mức"
+    first_appearance: "chapter_0086"
+
+    self_reference:
+      default: "con"
+      internal: "bé"
+
+    notes: |
+      - Con gái sinh đôi (em), con của Tống Bạc Lễ và Thẩm Tường
+      - Tên hiệu: 念念 (Niệm Niệm) — "niệm niệm xuân thu"
+      - Tống Bạc Lễ là "nô lệ con gái" (女儿奴) điển hình
+      - Giống mẹ Thẩm Tường

@@ -1,0 +1,406 @@
+# ============================================================
+# relationships.yaml — Ma trận xưng hô《港岛心蔷》
+# Tổng hợp từ quét toàn bộ 95 chương
+# ============================================================
+
+relationships:
+
+  # ================================================================
+  # NAM CHÍNH → NỮ CHÍNH (Tống Bạc Lễ → Thẩm Tường)
+  # ================================================================
+  - speaker: "ml_tong_bac_le"
+    listener: "fl_tham_tuong"
+    type: "romantic"
+    phases:
+      - phase_name: "yeu_ngam"
+        description: "Yêu ngầm — Cô là 'người phụ nữ đằng sau', anh nuôi giữ nhưng không coi trọng"
+        chapters: "2-15"
+        speaker_self: "anh"
+        speaker_calls_listener: "bé"
+        tone: "chiều chuộng kiểu trẻ con, bảo hộ nhưng không tôn trọng"
+        notes: "妹妹仔 → 'bé'. Đôi khi gọi 小孩儿 (nhóc). Khi nghiêm túc gọi tên Thẩm Tường."
+
+      - phase_name: "chia_tay"
+        description: "Chia tay — Giả vờ bình thản"
+        chapters: "16"
+        speaker_self: "tôi"
+        speaker_calls_listener: "cô"
+        tone: "bình thản, 'ok, good luck'"
+
+      - phase_name: "truy_duoi_1"
+        description: "Truy đuổi giai đoạn 1 — Cô lạnh nhạt, anh giữ khoảng cách nhưng không buông"
+        chapters: "17-32"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Thẩm tiểu thư"
+        tone: "kiềm chế, tôn trọng khoảng cách, kiên nhẫn"
+        notes: "Trước mặt người khác: 沈小姐/Irene小姐 → 'Thẩm tiểu thư'. Riêng tư: 沈蔷 → 'Thẩm Tường'. Trong suy nghĩ: 妹妹仔 → 'bé'."
+
+      - phase_name: "truy_duoi_2"
+        description: "Truy đuổi giai đoạn 2 — Chân thành hy sinh, cô dần mở lòng"
+        chapters: "33-48"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Tường Tường"
+        tone: "chân thành, tha thiết, hy sinh không cầu báo đáp"
+        notes: "Chuyển từ Irene小姐 sang 蔷蔷 (Tường Tường) khi cầu xin/thân mật. Chương 47 — cô tha thứ khi phát hiện anh mặc đồ mascot gấu trúc giúp cô."
+
+      - phase_name: "hoa_giai"
+        description: "Hòa giải — Dần gần lại nhưng chưa chính thức"
+        chapters: "49-64"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Tường Tường"
+        tone: "ấm áp, bảo vệ, sủng nhẹ"
+        notes: "蔷蔷 → 'Tường Tường' (chính). 沈老板 → 'Thẩm lão bản' (trêu). 妹妹仔 → 'bé' (trở lại dùng, nhưng giờ mang ý yêu thương thực sự)."
+
+      - phase_name: "tai_hop"
+        description: "Tái hợp — Chính thức yêu lại, cầu hôn, đính hôn"
+        chapters: "65-80"
+        speaker_self: "anh"
+        speaker_calls_listener: "bé"
+        tone: "sủng, ngọt ngào, bảo vệ tuyệt đối"
+        notes: "妹妹仔 → 'bé' (cách gọi chính). bb仔 → 'bé' (trước công chúng, tuyên bố chủ quyền). Irene小姐 → dùng khi trêu. Chương 68-69: tuyên bố cô là vị hôn thê trước truyền thông."
+
+      - phase_name: "ket_hon"
+        description: "Kết hôn — Vợ chồng, có con"
+        chapters: "81-95"
+        speaker_self: "anh"
+        speaker_calls_listener: "bé"
+        tone: "sủng đến tận xương, ngọt ngào, nô lệ con gái"
+        notes: "妹妹仔 → 'bé' (signature không đổi). 宋太太 → 'phu nhân Tống' (trang trọng/lãng mạn). 沈老板 → 'Thẩm lão bản' (trêu đùa)."
+
+  # ================================================================
+  # NỮ CHÍNH → NAM CHÍNH (Thẩm Tường → Tống Bạc Lễ)
+  # ================================================================
+  - speaker: "fl_tham_tuong"
+    listener: "ml_tong_bac_le"
+    type: "romantic"
+    phases:
+      - phase_name: "yeu_ngam"
+        description: "Yêu ngầm — Cam tâm chịu đựng, ngoan ngoãn chờ đợi"
+        chapters: "2-15"
+        speaker_self: "em"
+        speaker_calls_listener: "anh"
+        tone: "nhẫn nhịn, ngoan ngoãn, thiếu tự tin"
+        notes: "Ít khi gọi bằng danh xưng cụ thể, chủ yếu dùng 你 → 'anh'. Khi bực: gọi tên đầy đủ Tống Bạc Lễ."
+
+      - phase_name: "chia_tay"
+        description: "Chia tay — Dứt khoát"
+        chapters: "16"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Tống Bạc Lễ"
+        tone: "dứt khoát, lạnh, không lưu luyến"
+        notes: "'宋泊礼——我们分手吧' → 'Tống Bạc Lễ — chúng ta chia tay đi.'"
+
+      - phase_name: "lanh_nhat"
+        description: "Lạnh nhạt — Xa cách tuyệt đối, giữ khoảng cách chuyên nghiệp"
+        chapters: "17-32"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Tổng Tống"
+        tone: "lạnh, xa cách, chuyên nghiệp"
+        notes: "宋董 → 'Tổng Tống'. 宋先生 → 'Tống tiên sinh'. Khi tức giận: gọi tên đầy đủ 宋泊礼! Tự giới thiệu: 'Tôi là thiết kế sư tập đoàn Urna, Irene.'"
+
+      - phase_name: "mem_dan"
+        description: "Mềm dần — Bắt đầu mở lòng sau khi thấy sự thay đổi của anh"
+        chapters: "33-48"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Tổng Tống"
+        tone: "bớt lạnh, đôi lúc để lộ sự mềm yếu"
+        notes: "Vẫn dùng 宋董 → 'Tổng Tống'. Bước ngoặt ch47: gọi tên đầy đủ 宋泊礼 nhưng bằng giọng nhẹ nhàng, nói 'Tôi tha thứ cho anh rồi'."
+
+      - phase_name: "chap_nhan"
+        description: "Chấp nhận — Tin tưởng trở lại, nhưng vẫn giữ chút khoảng cách"
+        chapters: "49-64"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Tống tiên sinh"
+        tone: "lịch sự, ấm hơn, đôi khi trêu lại"
+        notes: "宋先生 → 'Tống tiên sinh' (chính). 宋董 → 'Tổng Tống' (trong ngữ cảnh công việc)."
+
+      - phase_name: "tai_hop"
+        description: "Tái hợp — Yêu lại, nhận lời cầu hôn"
+        chapters: "65-80"
+        speaker_self: "em"
+        speaker_calls_listener: "anh"
+        tone: "ngọt ngào, thoải mái, đôi khi trêu ghẹo"
+        notes: "你 → 'anh' (chính). 资本家 → 'tư bản gia' (trêu). 小宋 → 'Tiểu Tống' (đùa). 宋先生 → 'Tống tiên sinh' (lãng mạn). 老公 → 'ông xã' (bắt đầu dùng, ngại ngùng)."
+
+      - phase_name: "ket_hon"
+        description: "Kết hôn — Vợ chồng"
+        chapters: "81-95"
+        speaker_self: "em"
+        speaker_calls_listener: "anh"
+        tone: "tự nhiên, hạnh phúc, tự tin"
+        notes: "老公 → 'ông xã' (khi xúc động). 宋先生 → 'Tống tiên sinh' (trang trọng/lãng mạn). 念念爸爸 → 'bố Niệm Niệm' (đùa giỡn)."
+
+  # ================================================================
+  # GIA ĐÌNH NỮ CHÍNH
+  # ================================================================
+  - speaker: "fl_tham_tuong"
+    listener: "sp_trang_phuong_khiet"
+    type: "family"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Mẹ con"
+        chapters: "all"
+        speaker_self: "con"
+        speaker_calls_listener: "mẹ"
+        tone: "thân mật, nũng nịu, bảo vệ mẹ"
+
+  - speaker: "sp_trang_phuong_khiet"
+    listener: "fl_tham_tuong"
+    type: "family"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Mẹ con"
+        chapters: "all"
+        speaker_self: "mẹ"
+        speaker_calls_listener: "con gái"
+        tone: "yêu thương, lo lắng"
+        notes: "Dùng 囡囡 → dịch 'con gái' (cách gọi thân mật vùng Giang Nam)"
+
+  - speaker: "fl_tham_tuong"
+    listener: "ant_tham_an"
+    type: "family"
+    phases:
+      - phase_name: "tu_choi"
+        description: "Từ chối quan hệ cha con"
+        chapters: "all"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Thẩm tiên sinh"
+        tone: "lạnh, dứt khoát, không nhận cha"
+        notes: "'我没有爸爸' → 'Tôi không có bố.'"
+
+  - speaker: "ant_tham_an"
+    listener: "fl_tham_tuong"
+    type: "family"
+    phases:
+      - phase_name: "nhan_lai"
+        description: "Cố nhận lại con"
+        chapters: "all"
+        speaker_self: "bố"
+        speaker_calls_listener: "Tường Tường"
+        tone: "giả tạo thân mật, bị từ chối"
+
+  # ================================================================
+  # NAM CHÍNH ↔ GIA ĐÌNH NỮ CHÍNH
+  # ================================================================
+  - speaker: "ml_tong_bac_le"
+    listener: "sp_trang_phuong_khiet"
+    type: "family"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Con rể — Mẹ vợ"
+        chapters: "41+"
+        speaker_self: "cháu"
+        speaker_calls_listener: "cô"
+        tone: "lễ phép, ấm áp"
+        notes: "阿姨 → 'cô'. Tự giới thiệu: 'bạn của Thẩm Tường, Tống Bạc Lễ, cô gọi cháu Tiểu Tống.'"
+
+  - speaker: "sp_trang_phuong_khiet"
+    listener: "ml_tong_bac_le"
+    type: "family"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Mẹ vợ — Con rể"
+        chapters: "41+"
+        speaker_self: "cô"
+        speaker_calls_listener: "Tiểu Tống"
+        tone: "thân mật, quý mến"
+        notes: "小宋 → 'Tiểu Tống'"
+
+  # ================================================================
+  # NAM CHÍNH ↔ GIA ĐÌNH MÌNH
+  # ================================================================
+  - speaker: "ml_tong_bac_le"
+    listener: "sp_tong_mau"
+    type: "family"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Con trai — Mẹ"
+        chapters: "all"
+        speaker_self: "con"
+        speaker_calls_listener: "mẹ"
+        tone: "tôn trọng, đôi khi cứng đầu"
+
+  - speaker: "sp_tong_mau"
+    listener: "fl_tham_tuong"
+    type: "family"
+    phases:
+      - phase_name: "chua_chap_nhan"
+        description: "Chưa chấp nhận con dâu"
+        chapters: "13-72"
+        speaker_self: "tôi"
+        speaker_calls_listener: "cô"
+        tone: "lạnh, xét nét"
+
+      - phase_name: "chap_nhan"
+        description: "Chấp nhận con dâu — tặng vòng tay gia truyền"
+        chapters: "73+"
+        speaker_self: "cô"
+        speaker_calls_listener: "con"
+        tone: "ấm áp, chấp nhận"
+        notes: "Tặng vòng tay gia truyền + lì xì 10001 (vạn lý đào nhất)"
+
+  - speaker: "ml_tong_bac_le"
+    listener: "sp_tong_ong"
+    type: "family"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Cháu — Ông nội"
+        chapters: "all"
+        speaker_self: "cháu"
+        speaker_calls_listener: "ông nội"
+        tone: "kính trọng, đôi khi xin lỗi"
+        notes: "阿爷/阿公 → 'ông nội' (giữ sắc thái tiếng Quảng)"
+
+  # ================================================================
+  # CÔNG VIỆC & BẠN BÈ
+  # ================================================================
+  - speaker: "sp_tran_cuong"
+    listener: "ml_tong_bac_le"
+    type: "professional"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Thư ký — Sếp"
+        chapters: "all"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Tổng Tống"
+        tone: "tôn kính, cẩn thận"
+        notes: "宋董 → 'Tổng Tống'. Đôi khi 宋少爷 → 'Tống thiếu gia'."
+
+  - speaker: "sp_tran_cuong"
+    listener: "fl_tham_tuong"
+    type: "professional"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Thư ký — Phu nhân sếp"
+        chapters: "all"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Thẩm tiểu thư"
+        tone: "lễ phép, tôn trọng"
+        notes: "沈小姐 → 'Thẩm tiểu thư'"
+
+  - speaker: "fl_tham_tuong"
+    listener: "sp_tran_cuong"
+    type: "professional"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Thân mật"
+        chapters: "all"
+        speaker_self: "tôi"
+        speaker_calls_listener: "chú Trần"
+        tone: "thân mật, tôn trọng"
+        notes: "陈叔 → 'chú Trần'"
+
+  - speaker: "sp_vu_kien"
+    listener: "fl_tham_tuong"
+    type: "professional"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Đối tác kinh doanh"
+        chapters: "all"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Thẩm lão bản"
+        tone: "tôn trọng, hài hước"
+        notes: "沈老板 → 'Thẩm lão bản'"
+
+  - speaker: "sp_hua_ngan_quyet"
+    listener: "ml_tong_bac_le"
+    type: "friend"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Bạn thân từ nhỏ"
+        chapters: "all"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Tống thiếu"
+        tone: "thoải mái, trêu đùa"
+        notes: "宋少 → 'Tống thiếu'"
+
+  # ================================================================
+  # PHẢN DIỆN
+  # ================================================================
+  - speaker: "ant_chu_cuong"
+    listener: "ml_tong_bac_le"
+    type: "professional"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Giả vờ thân mật để lợi dụng"
+        chapters: "17-24"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Bạc Lễ"
+        tone: "giả tạo thân mật, xu nịnh"
+        notes: "泊礼 → 'Bạc Lễ' (gọi tên, giả vờ bề trên)"
+
+  - speaker: "ml_tong_bac_le"
+    listener: "ant_chu_cuong"
+    type: "professional"
+    phases:
+      - phase_name: "ban_dau"
+        description: "Ban đầu lễ phép"
+        chapters: "17-23"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Chu bá"
+        tone: "lịch sự xã giao"
+        notes: "朱伯 → 'Chu bá'"
+
+      - phase_name: "cat_dut"
+        description: "Sau khi biết Chu Cường uy hiếp Thẩm Tường"
+        chapters: "24+"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Hiệu trưởng Chu"
+        tone: "lạnh, dứt khoát"
+
+  - speaker: "sp_nhuoc_chi"
+    listener: "ml_tong_bac_le"
+    type: "social"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Tỏ vẻ thân mật"
+        chapters: "6-7"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Bạc Lễ ca ca"
+        tone: "nũng nịu, tỏ vẻ thân"
+        notes: "泊礼哥哥 → 'Bạc Lễ ca ca' (giữ nguyên 'ca ca' vì là cách xưng hô đặc thù giới thượng lưu HK)"
+
+  # ================================================================
+  # VỢ CHỒNG + CON CÁI (CHƯƠNG CUỐI)
+  # ================================================================
+  - speaker: "ml_tong_bac_le"
+    listener: "sp_tong_tue_du"
+    type: "family"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Bố cưng con gái"
+        chapters: "86+"
+        speaker_self: "bố"
+        speaker_calls_listener: "Niệm Niệm"
+        tone: "cưng chiều tột độ, nô lệ con gái"
+        notes: "念念 → 'Niệm Niệm'. 宝贝 → 'con yêu'. Cực kỳ sủng con gái."
+
+  - speaker: "fl_tham_tuong"
+    listener: "sp_tong_tue_hoai"
+    type: "family"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Mẹ con"
+        chapters: "86+"
+        speaker_self: "mẹ"
+        speaker_calls_listener: "Chiêu Chiêu"
+        tone: "yêu thương"
+        notes: "昭昭 → 'Chiêu Chiêu'. 宝宝 → 'con'."
+
+# ============================================================
+# GHI CHÚ TỔNG HỢP:
+#
+# 1. "妹妹仔" (bé) là cách gọi SIGNATURE của Tống Bạc Lễ cho Thẩm Tường
+#    Xuyên suốt truyện, ý nghĩa thay đổi:
+#    - Đầu: coi như trẻ con, chiếu cố → sắc thái coi nhẹ
+#    - Sau chia tay: nhớ nhung, tiếc nuối → sắc thái đau đớn
+#    - Truy đuổi: dần trở thành lời yêu chân thành
+#    - Tái hợp+: "bé" = lời yêu thương sâu nhất → sắc thái sủng
+#
+# 2. "Tổng Tống" (宋董) là cách Thẩm Tường giữ khoảng cách
+#    Khi cô gọi tên đầy đủ "Tống Bạc Lễ" = bước ngoặt cảm xúc
+#
+# 3. Chương 47 là PIVOTAL — cô tha thứ, đánh dấu chuyển phase
+#    Chương 68-69 là PIVOTAL — tái hợp chính thức
+#    Chương 82 là PIVOTAL — đám cưới
+# ============================================================

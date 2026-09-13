@@ -1,0 +1,37 @@
+# ============================================================
+# config.yaml — Cấu hình dự án dịch truyện
+# ============================================================
+
+# --- Thông tin truyện ---
+novel:
+  title_original: "港岛心蔷"
+  title_translated: "Tâm Tường"
+  author: "应雨竹"                     # Ứng Vũ Trúc
+  total_chapters: 95
+
+  sub_genre: "modern"                  # Hiện đại
+  setting: "Hồng Kông & Nội địa Trung Quốc, giới thượng lưu"
+  tone: "ngược trước ngọt sau, phá kính trùng viên, truy thê hỏa táng trường"
+  synopsis: |
+    Thẩm Tường yêu Tống Bạc Lễ bốn năm, cam tâm làm "người phụ nữ đằng sau anh".
+    Khi phát hiện anh dính tin đồn với người mẫu, cô quyết định rời đi.
+    Thái tử gia Cảng thành tưởng rằng mình buông bỏ được, nhưng rốt cuộc nhận ra
+    người anh không thể mất chính là cô. Anh mua trang viên trên đỉnh Thái Bình Sơn,
+    trồng đầy hoa tường vi, đặt tên "Tâm Tường" — trong sâu thẳm trái tim anh, là Thẩm Tường.
+
+# --- Cấu hình dịch thuật ---
+translation:
+  source_language: "zh"
+  target_language: "vi"
+  style: "literary"
+  register: "modern"
+  han_viet_preference: "balanced"
+  idiom_handling: "naturalize"
+
+# --- Trạng thái dự án (agent tự cập nhật) ---
+status:
+  current_chapter: 0
+  characters_extracted: true
+  glossary_built: true
+  last_translated: ""
+  last_reviewed: ""

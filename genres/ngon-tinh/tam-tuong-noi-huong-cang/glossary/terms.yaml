@@ -1,0 +1,235 @@
+# ============================================================
+# terms.yaml — Bảng thuật ngữ cố định《港岛心蔷》
+# Tổng hợp từ quét toàn bộ 95 chương
+# ============================================================
+
+terms:
+
+  # ==================== ĐỊA DANH ====================
+
+  - category: "places"
+    original: "港岛 / 港城"
+    translated: "Cảng thành"
+    note: "Hồng Kông — dùng nhất quán 'Cảng thành', không dùng 'Hong Kong'"
+
+  - category: "places"
+    original: "半山区 / 半山"
+    translated: "Bán Sơn"
+    note: "Khu dân cư thượng lưu Hồng Kông, nơi biệt thự 400m² của Tống Bạc Lễ nhìn ra Cảng Victoria"
+
+  - category: "places"
+    original: "太平山顶"
+    translated: "đỉnh Thái Bình Sơn"
+    note: "Nơi Tống Bạc Lễ mua trang viên trồng hoa tường vi"
+
+  - category: "places"
+    original: "铜锣湾"
+    translated: "Đồng La Loan"
+    note: "Khu thương mại sầm uất Hồng Kông"
+
+  - category: "places"
+    original: "维多利亚港"
+    translated: "Cảng Victoria"
+    note: "Bến cảng nổi tiếng HK, nơi Tống Bạc Lễ và Thẩm Tường xem pháo hoa"
+
+  - category: "places"
+    original: "檀宫"
+    translated: "Đàn Cung"
+    note: "Khu biệt thự hạng sang ở Thượng Hải, nơi ở của Tống Bạc Lễ và Thẩm Tường"
+
+  - category: "places"
+    original: "苏城"
+    translated: "Tô Thành"
+    note: "Quê nhà Thẩm Tường (Tô Châu), nơi mẹ cô sống"
+
+  - category: "places"
+    original: "苏环庄园"
+    translated: "Trang viên Tô Hoàn"
+    note: "Nơi tổ chức tiệc đính hôn lớn ở Tô Châu"
+
+  - category: "places"
+    original: "嘉艺小区 / 嘉禾小区"
+    translated: "khu Gia Nghệ"
+    note: "Khu dân cư của Thẩm Tường ở Thượng Hải"
+
+  - category: "places"
+    original: "阴明山庄"
+    translated: "Âm Minh Sơn Trang"
+    note: "Nơi tổ chức triển lãm thiết kế đại học HK"
+
+  # ==================== TỔ CHỨC / CÔNG TY ====================
+
+  - category: "orgs"
+    original: "宋氏集团"
+    translated: "Tống thị tập đoàn"
+    note: "Tập đoàn gia tộc Tống, thống trị Hồng Kông"
+
+  - category: "orgs"
+    original: "Eternal / 永恒"
+    translated: "Eternal"
+    note: "Thương hiệu trang sức cao cấp nhất thuộc Tống thị — giữ nguyên tên tiếng Anh"
+
+  - category: "orgs"
+    original: "芳禧"
+    translated: "Phương Hi"
+    note: "Thương hiệu trang sức / nhà cung cấp thuộc Tống thị. Tên lấy từ chữ 芳 trong tên Trang Phương Khiết"
+
+  - category: "orgs"
+    original: "君合"
+    translated: "Quân Hợp"
+    note: "Xưởng thiết kế trang sức do Thẩm Tường và Vu Kiến đồng sáng lập. Nghĩa: '与君共识，志同道合' (cùng nhau chia sẻ, chí đồng đạo hợp)"
+
+  - category: "orgs"
+    original: "Urna / Urna集团"
+    translated: "Urna"
+    note: "Tập đoàn trang sức thương mại, công ty cũ của Thẩm Tường. Giám đốc: Chu Hạo"
+
+  - category: "orgs"
+    original: "优艺传媒"
+    translated: "Ưu Nghệ truyền thông"
+    note: "Công ty truyền thông do Tống Bạc Lễ thành lập ở Thượng Hải"
+
+  - category: "orgs"
+    original: "赛马会"
+    translated: "Jockey Club"
+    note: "Hội đua ngựa — tổ chức độc quyền siêu thượng lưu HK. Trở thành 马主 (chủ ngựa) là biểu tượng địa vị tối thượng"
+
+  - category: "orgs"
+    original: "港大"
+    translated: "Đại học Hồng Kông"
+    note: "HKU — nơi Thẩm Tường tốt nghiệp"
+
+  # ==================== VẬT PHẨM / BIỂU TƯỢNG ====================
+
+  - category: "objects"
+    original: "蔷薇庄园 / 心蔷"
+    translated: "Trang viên Tường Vi / Tâm Tường"
+    note: "Trang viên trên đỉnh Thái Bình Sơn, trồng đầy hoa tường vi, Tống Bạc Lễ đặt tên 心蔷 (Tâm Tường) = 'trong sâu thẳm trái tim, là Thẩm Tường'. BIỂU TƯỢNG TRUNG TÂM của truyện."
+
+  - category: "objects"
+    original: "港1"
+    translated: "Cảng 1"
+    note: "Biển số xe của Tống Bạc Lễ — 'Cảng thành Cảng 1, Cảng thành số 1'. Biểu tượng quyền lực tối thượng."
+
+  - category: "objects"
+    original: "蔷薇花"
+    translated: "hoa tường vi"
+    note: "Biểu tượng xuyên suốt — tên Thẩm Tường (蔷) = tường vi"
+
+  - category: "objects"
+    original: "迅风"
+    translated: "Tấn Phong"
+    note: "Ngựa thuần chủng của Tống Bạc Lễ, mua 16 triệu USD"
+
+  - category: "objects"
+    original: "龙嗅蔷薇"
+    translated: "Rồng Ngửi Tường Vi"
+    note: "Tác phẩm thiết kế kim cương đoạt giải của Thẩm Tường tại cuộc thi HRD Bỉ"
+
+  - category: "objects"
+    original: "宋家珠宝册"
+    translated: "Sổ trang sức gia tộc Tống"
+    note: "Catalog tuyệt mật liệt kê trang sức, cổ vật quý của gia tộc Tống. Tống Bạc Lễ từng cho Thẩm Tường mượn tham khảo"
+
+  # ==================== CHỨC DANH ====================
+
+  - category: "titles"
+    original: "太子爷"
+    translated: "thái tử gia"
+    note: "Biệt danh truyền thông và xã hội dành cho Tống Bạc Lễ"
+
+  - category: "titles"
+    original: "宋董"
+    translated: "Tổng Tống"
+    note: "Cách gọi trang trọng cho Tống Bạc Lễ trong môi trường kinh doanh"
+
+  - category: "titles"
+    original: "沈老板"
+    translated: "Thẩm lão bản"
+    note: "Cách gọi Thẩm Tường khi cô trở thành chủ Quân Hợp"
+
+  - category: "titles"
+    original: "宋太太"
+    translated: "phu nhân Tống"
+    note: "Cách gọi Thẩm Tường sau khi kết hôn"
+
+  - category: "titles"
+    original: "宋少奶奶"
+    translated: "thiếu nãi nãi nhà Tống"
+    note: "Cách gọi trang trọng cho Thẩm Tường trong giới thượng lưu"
+
+  # ==================== THUẬT NGỮ CHUYÊN NGÀNH ====================
+
+  - category: "concepts"
+    original: "花丝镶嵌"
+    translated: "hoa ty khảm nhương"
+    note: "Kỹ thuật chế tác trang sức truyền thống Trung Quốc cực kỳ phức tạp — sở trường của Thẩm Tường. Có thể dùng 'filigree' trong ngữ cảnh quốc tế."
+
+  - category: "concepts"
+    original: "HRD国际钻石首饰设计大赛"
+    translated: "Cuộc thi Thiết kế Trang sức Kim cương Quốc tế HRD"
+    note: "Giải thưởng danh giá, Thẩm Tường đoạt giải tại Bỉ"
+
+  - category: "concepts"
+    original: "IR设计大赛"
+    translated: "Cuộc thi thiết kế IR"
+    note: "Cuộc thi thiết kế phụ kiện quốc tế — Thẩm Tường (Irene) đoạt giải nhất"
+
+  - category: "concepts"
+    original: "马主"
+    translated: "chủ ngựa"
+    note: "Tư cách thành viên Jockey Club — biểu tượng địa vị tối thượng giới siêu giàu HK"
+
+  # ==================== TIẾNG QUẢNG ĐÔNG ====================
+
+  - category: "cultural"
+    original: "妹妹仔"
+    translated: "bé"
+    note: "Tiếng Quảng: 'mui mui zai' = cô gái nhỏ. Cách gọi SIGNATURE của Tống Bạc Lễ cho Thẩm Tường. Dịch nhất quán thành 'bé'."
+
+  - category: "cultural"
+    original: "囡囡"
+    translated: "con gái"
+    note: "Tiếng địa phương Giang Nam: cách gọi con gái thân mật. Mẹ Trang Phương Khiết gọi Thẩm Tường."
+
+  - category: "cultural"
+    original: "钟意"
+    translated: "thích / yêu"
+    note: "Tiếng Quảng: 'chung yi' = thích, yêu. Xuất hiện nhiều trong lời Tống Bạc Lễ."
+
+  - category: "cultural"
+    original: "对唔住"
+    translated: "xin lỗi"
+    note: "Tiếng Quảng: 'dui m jyu' = xin lỗi. Dùng khi Tống Bạc Lễ nói chuyện với ông nội."
+
+  # ==================== THÀNH NGỮ / CÂU ĐẶC BIỆT ====================
+
+  - category: "idioms"
+    original: "心想柿橙"
+    translated: "tâm tưởng sự thành"
+    note: "Rượu trái cây đặt cho Thẩm Tường — đồng âm 心想事成 (mọi điều như ý). Giữ phép chơi chữ khi dịch."
+
+  - category: "idioms"
+    original: "谁质疑谁证明"
+    translated: "ai nghi ngờ thì người đó chứng minh"
+    note: "Nguyên tắc xử lý tin đồn của Tống Bạc Lễ"
+
+  - category: "idioms"
+    original: "礼尚往来"
+    translated: "lễ thượng vãng lai"
+    note: "Có qua có lại. Thẩm Tường dùng để giải thích việc đón Tống Bạc Lễ tan sở, anh sau đó 'vận dụng' thành cớ để thân mật."
+
+  - category: "idioms"
+    original: "昭昭盈柔，念念春秋，此生只盼：烟火清安久，岁岁不知愁"
+    translated: "Chiêu chiêu doanh nhu, niệm niệm xuân thu, đời này chỉ mong: pháo hoa thanh an mãi, năm năm chẳng biết sầu"
+    note: "Câu thơ Tống Bạc Lễ dùng giải thích nguồn gốc tên hiệu hai con: Chiêu Chiêu và Niệm Niệm"
+
+  - category: "idioms"
+    original: "与君共识，志同道合"
+    translated: "cùng nhau chia sẻ, chí đồng đạo hợp"
+    note: "Ý nghĩa tên Quân Hợp (君合)"
+
+  - category: "idioms"
+    original: "我心深处，是沈蔷"
+    translated: "Trong sâu thẳm trái tim anh, là Thẩm Tường"
+    note: "Ý nghĩa tên Tâm Tường (心蔷) — câu nói kinh điển của Tống Bạc Lễ trước truyền thông"
