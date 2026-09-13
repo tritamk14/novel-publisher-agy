@@ -1,0 +1,74 @@
+# ============================================================
+# terms.yaml — Bảng thuật ngữ cố định
+# Đảm bảo các thuật ngữ được dịch nhất quán xuyên suốt truyện.
+# ============================================================
+#
+# Agent sẽ khởi tạo file này khi trích xuất nhân vật.
+# User có thể bổ sung bất cứ lúc nào.
+# Agent PHẢI tra cứu file này trước khi dịch mỗi chương.
+#
+# Các loại thuật ngữ:
+#   names      = Tên người (đã có trong registry, nhưng lặp lại ở đây cho tiện)
+#   places     = Địa danh
+#   titles     = Chức danh, danh xưng
+#   orgs       = Tổ chức, công ty
+#   objects    = Vật phẩm đặc biệt
+#   concepts   = Khái niệm, thuật ngữ chuyên ngành
+#   idioms     = Thành ngữ đặc thù (dịch cố định)
+#   cultural   = Thuật ngữ văn hóa
+# ============================================================
+
+terms: []
+
+# ---- MẪU (xóa khi dùng thật) ----
+# terms:
+#   # --- Địa danh ---
+#   - category: "places"
+#     original: "京城"
+#     translated: "Kinh thành"
+#     note: "Dùng nhất quán, không dịch thành 'thủ đô' hay 'thành phố'"
+#
+#   - category: "places"
+#     original: "顾氏集团"
+#     translated: "Tập đoàn Cố thị"
+#     note: ""
+#
+#   # --- Chức danh ---
+#   - category: "titles"
+#     original: "顾总"
+#     translated: "Tổng Cố"
+#     note: "Cách nhân viên gọi nam chính"
+#
+#   - category: "titles"
+#     original: "苏总监"
+#     translated: "Tổng giám đốc Tô"
+#     note: ""
+#
+#   # --- Vật phẩm ---
+#   - category: "objects"
+#     original: "红宝石项链"
+#     translated: "sợi dây chuyền hồng ngọc"
+#     note: "Vật phẩm quan trọng, xuất hiện nhiều lần"
+#
+#   # --- Khái niệm ---
+#   - category: "concepts"
+#     original: "电竞"
+#     translated: "thể thao điện tử"
+#     note: "Không dịch thành 'esport' hay 'game'"
+#
+#   # --- Thành ngữ cố định ---
+#   - category: "idioms"
+#     original: "一见钟情"
+#     translated: "yêu từ cái nhìn đầu tiên"
+#     note: "Có thể dùng 'tiếng sét ái tình' tùy ngữ cảnh"
+#
+#   - category: "idioms"
+#     original: "青梅竹马"
+#     translated: "thanh mai trúc mã"
+#     note: "Giữ Hán Việt vì quen thuộc với độc giả Việt"
+#
+#   # --- Văn hóa ---
+#   - category: "cultural"
+#     original: "红包"
+#     translated: "bao lì xì"
+#     note: "Dùng 'bao lì xì' thay vì 'phong bì đỏ'"

@@ -1,0 +1,46 @@
+# ============================================================
+# chapter-summaries.yaml — Tóm tắt nội dung từng chương
+# Agent tự động cập nhật sau khi dịch xong mỗi chương.
+# Dùng để duy trì ngữ cảnh liên tục giữa các chương.
+# ============================================================
+#
+# Mỗi entry gồm:
+#   - chapter: tên file chương
+#   - summary: tóm tắt ngắn (3-5 câu) nội dung chính
+#   - characters_present: nhân vật xuất hiện (dùng ID từ registry)
+#   - key_events: sự kiện quan trọng
+#   - relationship_changes: thay đổi quan hệ (nếu có)
+#   - location: địa điểm chính
+#   - mood: tông cảm xúc chương
+#   - cliffhanger: điểm treo cuối chương (nếu có)
+#
+# QUAN TRỌNG: Agent PHẢI đọc tóm tắt 2-3 chương trước
+# khi bắt đầu dịch chương tiếp theo.
+# ============================================================
+
+summaries: []
+
+# ---- MẪU (xóa khi dùng thật) ----
+# summaries:
+#   - chapter: "chapter-001"
+#     summary: |
+#       Tô Noãn lần đầu gặp Cố Vị Dịch tại buổi tiệc công ty.
+#       Cô vô tình đổ rượu lên áo anh. Anh tỏ ra lạnh lùng nhưng
+#       không trách cô. Cuối chương, cô phát hiện anh chính là
+#       đối tác mới của công ty mình.
+#     characters_present:
+#       - "ml_gu_wei"
+#       - "fl_su_nuan"
+#       - "sp_thu_ky"
+#     key_events:
+#       - "Tô Noãn và Cố Vị Dịch gặp nhau lần đầu"
+#       - "Đổ rượu lên áo Cố Vị Dịch"
+#       - "Phát hiện anh là đối tác mới"
+#     relationship_changes:
+#       - pair: ["ml_gu_wei", "fl_su_nuan"]
+#         from: null
+#         to: "xa_la"
+#         note: "Ấn tượng ban đầu: anh lạnh lùng, cô xấu hổ"
+#     location: "Khách sạn 5 sao, phòng tiệc"
+#     mood: "hài hước, ngượng ngùng"
+#     cliffhanger: "Ngày mai họ phải làm việc cùng nhau"

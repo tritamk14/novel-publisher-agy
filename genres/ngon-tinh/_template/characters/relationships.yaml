@@ -1,0 +1,122 @@
+# ============================================================
+# relationships.yaml — Ma trận xưng hô
+# Định nghĩa cách từng nhân vật xưng hô với nhau,
+# THAY ĐỔI theo tiến trình truyện (phases).
+#
+# ĐÂY LÀ CƠ CHẾ CHỐNG LOẠN XƯNG HÔ.
+# ============================================================
+#
+# Cấu trúc:
+#   speaker → listener → phase → (tự xưng, gọi đối phương)
+#
+# Mỗi "phase" đại diện cho một giai đoạn quan hệ:
+#   - Khoảng chương áp dụng
+#   - Cách tự xưng của speaker
+#   - Cách speaker gọi listener
+#
+# QUAN TRỌNG:
+#   - Xưng hô trong đối thoại (dialogue) khác với tường thuật (narration)
+#   - File này chỉ định xưng hô trong ĐỐI THOẠI
+#   - Xưng hô trong tường thuật lấy từ registry.yaml → self_reference.internal
+#
+# ============================================================
+
+relationships: []
+
+# ---- MẪU (xóa khi dùng thật) ----
+# relationships:
+#
+#   # === NAM CHÍNH → NỮ CHÍNH ===
+#   - speaker: "ml_gu_wei"
+#     listener: "fl_su_nuan"
+#     type: "romantic"                       # romantic | family | friend | rival | professional
+#     phases:
+#       - phase_name: "xa_la"                # Tên giai đoạn
+#         description: "Mới gặp, chưa quen"
+#         chapters: "1-5"                    # Chương áp dụng (inclusive)
+#         speaker_self: "tôi"               # Speaker tự xưng
+#         speaker_calls_listener: "Tô tiểu thư"  # Speaker gọi listener
+#         tone: "lịch sự, xa cách"          # Tông giọng
+#
+#       - phase_name: "quen_biet"
+#         description: "Đã quen, có thiện cảm"
+#         chapters: "6-15"
+#         speaker_self: "tôi"
+#         speaker_calls_listener: "Tô Noãn"
+#         tone: "nhẹ nhàng hơn, bớt xa cách"
+#
+#       - phase_name: "yeu"
+#         description: "Yêu nhau, thân mật"
+#         chapters: "16-50"
+#         speaker_self: "anh"
+#         speaker_calls_listener: "em"
+#         tone: "ấm áp, bảo vệ, sủng"
+#
+#       - phase_name: "hieu_lam"
+#         description: "Giai đoạn hiểu lầm, giận nhau"
+#         chapters: "30-35"                  # Có thể overlap với phase trước
+#         speaker_self: "tôi"               # Quay lại xa cách
+#         speaker_calls_listener: "cô"
+#         tone: "lạnh, đau khổ kìm nén"
+#         override: true                     # Override phase đang active
+#
+#   # === NỮ CHÍNH → NAM CHÍNH ===
+#   - speaker: "fl_su_nuan"
+#     listener: "ml_gu_wei"
+#     type: "romantic"
+#     phases:
+#       - phase_name: "xa_la"
+#         description: "Mới gặp"
+#         chapters: "1-5"
+#         speaker_self: "tôi"
+#         speaker_calls_listener: "Cố tiên sinh"
+#         tone: "lễ phép, giữ khoảng cách"
+#
+#       - phase_name: "quen_biet"
+#         description: "Đã quen, bắt đầu có cảm tình"
+#         chapters: "6-15"
+#         speaker_self: "tôi"
+#         speaker_calls_listener: "Cố Vị Dịch"
+#         tone: "tự nhiên hơn, đôi khi ngại ngùng"
+#
+#       - phase_name: "yeu"
+#         description: "Yêu nhau"
+#         chapters: "16-50"
+#         speaker_self: "em"
+#         speaker_calls_listener: "anh"
+#         tone: "ngọt ngào, tự nhiên"
+#
+#   # === NAM CHÍNH → THƯ KÝ ===
+#   - speaker: "ml_gu_wei"
+#     listener: "sp_thu_ky"
+#     type: "professional"
+#     phases:
+#       - phase_name: "mac_dinh"
+#         description: "Quan hệ cấp trên - cấp dưới"
+#         chapters: "all"                    # "all" = áp dụng toàn bộ truyện
+#         speaker_self: "tôi"
+#         speaker_calls_listener: "Trần thư ký"
+#         tone: "lạnh, ngắn gọn, ra lệnh"
+#
+#   # === GIA ĐÌNH ===
+#   - speaker: "fl_su_nuan"
+#     listener: "sp_su_mama"
+#     type: "family"
+#     phases:
+#       - phase_name: "mac_dinh"
+#         description: "Mẹ con"
+#         chapters: "all"
+#         speaker_self: "con"
+#         speaker_calls_listener: "mẹ"
+#         tone: "thân mật, nũng nịu"
+
+# ============================================================
+# HƯỚNG DẪN CHO AGENT KHI DỊCH:
+#
+# 1. Trước khi dịch mỗi chương, xác định chương hiện tại
+# 2. Tra relationships.yaml để tìm phase đang active cho mỗi cặp nhân vật
+# 3. Nếu có phase override = true và chapters trùng, ưu tiên phase override
+# 4. Áp dụng xưng hô đúng trong mọi đoạn đối thoại
+# 5. Nếu phát hiện xưng hô trong nguyên tác thay đổi đột ngột,
+#    ghi chú và hỏi user trước khi tự ý đổi phase
+# ============================================================

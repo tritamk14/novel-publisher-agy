@@ -1,0 +1,111 @@
+# ============================================================
+# Ví dụ Ma Trận Xưng Hô — Truyện "Cá Mực Hầm Mật" (giả lập)
+# File này chỉ là ví dụ minh họa, không dùng trong dự án thật.
+# ============================================================
+
+relationships:
+
+  # === NAM CHÍNH (Hàn Thương Ngôn) → NỮ CHÍNH (Đồng Niên) ===
+  - speaker: "ml_han_thuong_ngon"
+    listener: "fl_dong_nien"
+    type: "romantic"
+    phases:
+      - phase_name: "moi_gap"
+        description: "Gặp nhau trong game, ngoài đời chưa thân"
+        chapters: "1-8"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Đồng Niên"
+        tone: "nhẹ nhàng, hơi trêu"
+
+      - phase_name: "quan_tam"
+        description: "Bắt đầu quan tâm, chăm sóc"
+        chapters: "9-20"
+        speaker_self: "anh"
+        speaker_calls_listener: "em"
+        tone: "ấm áp, bảo vệ, đôi khi trêu chọc"
+
+      - phase_name: "yeu_nhau"
+        description: "Chính thức yêu nhau"
+        chapters: "21-48"
+        speaker_self: "anh"
+        speaker_calls_listener: "em"
+        tone: "sủng, ngọt ngào, bảo vệ"
+
+  # === NỮ CHÍNH (Đồng Niên) → NAM CHÍNH (Hàn Thương Ngôn) ===
+  - speaker: "fl_dong_nien"
+    listener: "ml_han_thuong_ngon"
+    type: "romantic"
+    phases:
+      - phase_name: "moi_gap"
+        description: "Ngưỡng mộ trong game, ngoài đời ngại ngùng"
+        chapters: "1-8"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Hàn thần"
+        tone: "ngại ngùng, hâm mộ"
+
+      - phase_name: "than_hon"
+        description: "Dần quen, thoải mái hơn"
+        chapters: "9-20"
+        speaker_self: "em"
+        speaker_calls_listener: "anh"
+        tone: "ngọt ngào, đôi khi nhõng nhẽo"
+
+      - phase_name: "yeu_nhau"
+        description: "Yêu nhau, rất ngọt"
+        chapters: "21-48"
+        speaker_self: "em"
+        speaker_calls_listener: "anh"
+        tone: "tự nhiên, ngọt ngào, tin tưởng"
+
+  # === NAM CHÍNH → BẠN THÂN (Ngô Bạch) ===
+  - speaker: "ml_han_thuong_ngon"
+    listener: "sp_ngo_bach"
+    type: "friend"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Bạn thân, đồng đội"
+        chapters: "all"
+        speaker_self: "tôi"
+        speaker_calls_listener: "Ngô Bạch"
+        tone: "bình thường, đồng nghiệp/bạn bè"
+
+  # === NỮ CHÍNH → MẸ ===
+  - speaker: "fl_dong_nien"
+    listener: "sp_dong_mama"
+    type: "family"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Mẹ con"
+        chapters: "all"
+        speaker_self: "con"
+        speaker_calls_listener: "mẹ"
+        tone: "thân mật, nũng nịu"
+
+  # === MẸ NỮ CHÍNH → NỮ CHÍNH ===
+  - speaker: "sp_dong_mama"
+    listener: "fl_dong_nien"
+    type: "family"
+    phases:
+      - phase_name: "mac_dinh"
+        description: "Mẹ con"
+        chapters: "all"
+        speaker_self: "mẹ"
+        speaker_calls_listener: "con"
+        tone: "yêu thương, lo lắng, đôi khi cằn nhằn"
+
+# ============================================================
+# GHI CHÚ:
+#
+# 1. Mỗi cặp nhân vật cần 2 entry (A→B và B→A)
+#    vì xưng hô không đối xứng trong tiếng Việt
+#
+# 2. chapters: "all" = áp dụng toàn bộ truyện
+#    chapters: "1-10" = từ chương 1 đến 10
+#    chapters: "11+" = từ chương 11 trở đi
+#
+# 3. Khi phase overlap (VD: yêu nhau nhưng có giai đoạn giận),
+#    thêm phase với override: true
+#
+# 4. Nếu không chắc chắn khoảng chương, ghi ước lượng
+#    và sẽ điều chỉnh khi dịch đến
+# ============================================================

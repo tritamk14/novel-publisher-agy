@@ -1,0 +1,83 @@
+# ============================================================
+# registry.yaml — Hồ sơ nhân vật
+# File này được agent tạo tự động, user review và điều chỉnh.
+# ĐÂY LÀ FILE QUAN TRỌNG NHẤT — quyết định chất lượng xưng hô.
+# ============================================================
+#
+# Hướng dẫn:
+# - Agent sẽ quét raw chapters và tạo file này
+# - User CẦN review và sửa nếu cần
+# - Khi phát hiện nhân vật mới trong quá trình dịch, agent sẽ bổ sung
+# - Các trường có dấu (*) là BẮT BUỘC
+#
+# Vai trò (role):
+#   male_lead     = Nam chính
+#   female_lead   = Nữ chính
+#   male_second   = Nam phụ
+#   female_second = Nữ phụ
+#   supporting    = Nhân vật phụ
+#   antagonist    = Phản diện
+#   minor         = Nhân vật thoáng qua
+#
+# ============================================================
+
+characters: []
+
+# ---- MẪU NHÂN VẬT (xóa khi dùng thật) ----
+# characters:
+#   - id: "ml_gu_wei"                        # (*) ID duy nhất, snake_case
+#     name_original: "顾未易"                  # (*) Tên gốc tiếng Trung
+#     name_translated: "Cố Vị Dịch"           # (*) Tên dịch tiếng Việt (Hán Việt)
+#     name_short: "Cố Vị Dịch"               # Tên ngắn dùng trong tường thuật
+#     aliases:                                 # Biệt danh / cách gọi khác
+#       - original: "小顾"
+#         translated: "Tiểu Cố"
+#       - original: "顾总"
+#         translated: "Tổng Cố"
+#     gender: "male"                          # (*) male | female
+#     role: "male_lead"                       # (*) Vai trò trong truyện
+#     age: "28"                               # Tuổi (hoặc khoảng tuổi)
+#     occupation: "CEO tập đoàn Cố thị"       # Nghề nghiệp
+#     personality: "lạnh lùng bên ngoài, ấm áp bên trong, bảo vệ người mình yêu"
+#     appearance: "cao, đẹp trai, ánh mắt sắc lạnh"
+#     first_appearance: "chapter-001"          # Chương xuất hiện đầu tiên
+#
+#     # Cách tự xưng của nhân vật này
+#     self_reference:
+#       default: "tôi"                        # Cách tự xưng mặc định
+#       formal: "tôi"                         # Trong ngữ cảnh trang trọng
+#       intimate: "anh"                       # Với người thân/yêu
+#       internal: "hắn"                       # Trong tường thuật ngôi 3
+#
+#     # Ghi chú đặc biệt cho dịch giả
+#     notes: |
+#       - Nói ít, hành động nhiều
+#       - Khi nói với nữ chính, giọng mềm hơn bình thường
+#       - Hay dùng câu ngắn, ít khi giải thích dài dòng
+#
+#   - id: "fl_su_nuan"
+#     name_original: "苏暖"
+#     name_translated: "Tô Noãn"
+#     name_short: "Tô Noãn"
+#     aliases:
+#       - original: "暖暖"
+#         translated: "Noãn Noãn"
+#       - original: "苏小姐"
+#         translated: "Tô tiểu thư"
+#     gender: "female"
+#     role: "female_lead"
+#     age: "24"
+#     occupation: "Kiến trúc sư"
+#     personality: "thông minh, mạnh mẽ, ngoài mềm trong cứng"
+#     appearance: "xinh đẹp, mắt to, nụ cười ấm áp"
+#     first_appearance: "chapter-001"
+#
+#     self_reference:
+#       default: "tôi"
+#       formal: "tôi"
+#       intimate: "em"
+#       internal: "cô"
+#
+#     notes: |
+#       - Hay cười, nhưng khi tức thì rất đáng sợ
+#       - Nói chuyện dí dỏm, thông minh

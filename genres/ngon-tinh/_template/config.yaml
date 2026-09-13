@@ -1,0 +1,54 @@
+# ============================================================
+# config.yaml — Cấu hình dự án dịch truyện
+# Chỉnh sửa file này trước khi bắt đầu dịch
+# ============================================================
+
+# --- Thông tin truyện ---
+novel:
+  title_original: ""           # Tên gốc tiếng Trung (VD: "亲爱的，热爱的")
+  title_translated: ""         # Tên tiếng Việt (VD: "Cá Mực Hầm Mật")
+  author: ""                   # Tác giả (VD: "墨宝非宝")
+  total_chapters: 0            # Tổng số chương
+
+  # Phân loại
+  sub_genre: ""                # modern | ancient | time-travel | rebirth | fantasy
+                               # modern = hiện đại
+                               # ancient = cổ đại
+                               # time-travel = xuyên không
+                               # rebirth = trùng sinh
+                               # fantasy = huyền huyễn ngôn tình
+
+  setting: ""                  # Bối cảnh (VD: "Trung Quốc hiện đại, giới esport")
+  tone: ""                     # Tông giọng (VD: "nhẹ nhàng ngọt ngào" | "ngược tâm" | "sủng")
+  synopsis: ""                 # Tóm tắt ngắn (2-3 câu)
+
+# --- Cấu hình dịch thuật ---
+translation:
+  source_language: "zh"        # Ngôn ngữ gốc
+  target_language: "vi"        # Ngôn ngữ đích
+
+  # Văn phong dịch
+  style: "literary"            # literary = văn chương | casual = đời thường
+  register: ""                 # modern = hiện đại | classical = cổ phong
+                               # → Nếu sub_genre = ancient, nên chọn classical
+                               # → Nếu sub_genre = modern, nên chọn modern
+
+  # Quy tắc Hán Việt
+  han_viet_preference: "balanced"
+                               # heavy = dùng nhiều Hán Việt (phù hợp cổ đại)
+                               # balanced = cân bằng (phù hợp hầu hết)
+                               # light = ít Hán Việt, ưu tiên thuần Việt (phù hợp hiện đại nhẹ nhàng)
+
+  # Xử lý thành ngữ
+  idiom_handling: "naturalize"
+                               # naturalize = dịch thành diễn đạt tự nhiên tiếng Việt
+                               # equivalent = tìm thành ngữ Việt tương đương
+                               # explain = giải thích nghĩa (ít dùng)
+
+# --- Trạng thái dự án (agent tự cập nhật) ---
+status:
+  current_chapter: 0           # Chương đang/sắp dịch
+  characters_extracted: false  # Đã trích xuất nhân vật chưa
+  glossary_built: false        # Đã xây dựng bảng thuật ngữ chưa
+  last_translated: ""          # Chương cuối đã dịch
+  last_reviewed: ""            # Chương cuối đã review
