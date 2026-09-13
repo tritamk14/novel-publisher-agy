@@ -140,7 +140,7 @@ terms:
 
   - category: "titles"
     original: "宋董"
-    translated: "Tổng Tống"
+    translated: "Tống Đổng"
     note: "Cách gọi trang trọng cho Tống Bạc Lễ trong môi trường kinh doanh"
 
   - category: "titles"
@@ -186,6 +186,8 @@ terms:
     original: "妹妹仔"
     translated: "bé"
     note: "Tiếng Quảng: 'mui mui zai' = cô gái nhỏ. Cách gọi SIGNATURE của Tống Bạc Lễ cho Thẩm Tường. Dịch nhất quán thành 'bé'."
+    first_occurrence_footnote: true
+    footnote_text: "Bé — nguyên văn '妹妹仔' (mui mui zai), tiếng Quảng Đông nghĩa là 'cô gái nhỏ'. Đây là cách Tống Bạc Lễ gọi Thẩm Tường, vừa mang sắc thái chiều chuộng vừa coi như trẻ con."
 
   - category: "cultural"
     original: "囡囡"

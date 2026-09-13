@@ -47,6 +47,8 @@ Trước khi dịch chương N:
 
 **Nếu phát hiện nhân vật mới:** Bổ sung vào `characters/registry.yaml` trước khi dịch.
 
+**Chú thích lần đầu:** Kiểm tra `glossary/terms.yaml` — nếu thuật ngữ nào có `first_occurrence_footnote: true`, lần ĐẦU TIÊN xuất hiện trong bản dịch phải thêm chú thích ở cuối đoạn hoặc cuối chương theo nội dung `footnote_text`. Các lần sau không cần chú thích lại.
+
 ### Bước 3: Dịch
 
 Dịch toàn bộ chương theo các quy tắc dưới đây.

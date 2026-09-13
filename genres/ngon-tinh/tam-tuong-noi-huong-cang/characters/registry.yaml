@@ -62,7 +62,7 @@ characters:
     name_short: "Tống Bạc Lễ"
     aliases:
       - original: "宋董"
-        translated: "Tổng Tống"
+        translated: "Tống Đổng"
       - original: "宋少"
         translated: "Tống thiếu"
       - original: "宋少爷"
@@ -178,7 +178,7 @@ characters:
 
     notes: |
       - Gọi Thẩm Tường bằng "Thẩm tiểu thư" (沈小姐)
-      - Gọi Tống Bạc Lễ bằng "Tổng Tống" (宋董) hoặc "Tống thiếu gia" (宋少爷)
+      - Gọi Tống Bạc Lễ bằng "Tống Đổng" (宋董) hoặc "Tống thiếu gia" (宋少爷)
       - Thẩm Tường gọi bằng "chú Trần" (陈叔) — thể hiện sự thân mật
 
   - id: "sp_cung_van_van"

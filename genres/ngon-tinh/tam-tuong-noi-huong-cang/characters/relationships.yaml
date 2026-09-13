@@ -94,17 +94,17 @@ relationships:
         description: "Lạnh nhạt — Xa cách tuyệt đối, giữ khoảng cách chuyên nghiệp"
         chapters: "17-32"
         speaker_self: "tôi"
-        speaker_calls_listener: "Tổng Tống"
+        speaker_calls_listener: "Tống Đổng"
         tone: "lạnh, xa cách, chuyên nghiệp"
-        notes: "宋董 → 'Tổng Tống'. 宋先生 → 'Tống tiên sinh'. Khi tức giận: gọi tên đầy đủ 宋泊礼! Tự giới thiệu: 'Tôi là thiết kế sư tập đoàn Urna, Irene.'"
+        notes: "宋董 → 'Tống Đổng'. 宋先生 → 'Tống tiên sinh'. Khi tức giận: gọi tên đầy đủ 宋泊礼! Tự giới thiệu: 'Tôi là thiết kế sư tập đoàn Urna, Irene.'"
 
       - phase_name: "mem_dan"
         description: "Mềm dần — Bắt đầu mở lòng sau khi thấy sự thay đổi của anh"
         chapters: "33-48"
         speaker_self: "tôi"
-        speaker_calls_listener: "Tổng Tống"
+        speaker_calls_listener: "Tống Đổng"
         tone: "bớt lạnh, đôi lúc để lộ sự mềm yếu"
-        notes: "Vẫn dùng 宋董 → 'Tổng Tống'. Bước ngoặt ch47: gọi tên đầy đủ 宋泊礼 nhưng bằng giọng nhẹ nhàng, nói 'Tôi tha thứ cho anh rồi'."
+        notes: "Vẫn dùng 宋董 → 'Tống Đổng'. Bước ngoặt ch47: gọi tên đầy đủ 宋泊礼 nhưng bằng giọng nhẹ nhàng, nói 'Tôi tha thứ cho anh rồi'."
 
       - phase_name: "chap_nhan"
         description: "Chấp nhận — Tin tưởng trở lại, nhưng vẫn giữ chút khoảng cách"
@@ -112,7 +112,7 @@ relationships:
         speaker_self: "tôi"
         speaker_calls_listener: "Tống tiên sinh"
         tone: "lịch sự, ấm hơn, đôi khi trêu lại"
-        notes: "宋先生 → 'Tống tiên sinh' (chính). 宋董 → 'Tổng Tống' (trong ngữ cảnh công việc)."
+        notes: "宋先生 → 'Tống tiên sinh' (chính). 宋董 → 'Tống Đổng' (trong ngữ cảnh công việc)."
 
       - phase_name: "tai_hop"
         description: "Tái hợp — Yêu lại, nhận lời cầu hôn"
@@ -262,9 +262,9 @@ relationships:
         description: "Thư ký — Sếp"
         chapters: "all"
         speaker_self: "tôi"
-        speaker_calls_listener: "Tổng Tống"
+        speaker_calls_listener: "Tống Đổng"
         tone: "tôn kính, cẩn thận"
-        notes: "宋董 → 'Tổng Tống'. Đôi khi 宋少爷 → 'Tống thiếu gia'."
+        notes: "宋董 → 'Tống Đổng'. Đôi khi 宋少爷 → 'Tống thiếu gia'."
 
   - speaker: "sp_tran_cuong"
     listener: "fl_tham_tuong"
@@ -397,7 +397,7 @@ relationships:
 #    - Truy đuổi: dần trở thành lời yêu chân thành
 #    - Tái hợp+: "bé" = lời yêu thương sâu nhất → sắc thái sủng
 #
-# 2. "Tổng Tống" (宋董) là cách Thẩm Tường giữ khoảng cách
+# 2. "Tống Đổng" (宋董) là cách Thẩm Tường giữ khoảng cách
 #    Khi cô gọi tên đầy đủ "Tống Bạc Lễ" = bước ngoặt cảm xúc
 #
 # 3. Chương 47 là PIVOTAL — cô tha thứ, đánh dấu chuyển phase
