@@ -143,11 +143,116 @@ hoặc:
 
 ---
 
-## 9. Checklist trước khi nộp bản dịch
+## 9. Nhịp câu — Viết ít, nói nhiều (học từ bản dịch người)
 
+Câu cực ngắn (3-8 từ) tạo **nhịp**, tạo **tension**, tạo **cảm xúc**.
+
+### ❌ SAI — Mọi câu đều dài tương đương:
+> Tống Bạc Lễ đáp: "Không quen."
+> Thẩm Tường không tin là anh không quen.
+
+### ✅ ĐÚNG — Xen kẽ ngắn/dài:
+> "Không quen."
+> Thẩm Tường không tin.
+
+### Thêm ví dụ:
+> ❌ "Cô không chịu dừng lại ở đây mà vẫn muốn tiếp tục truy hỏi."
+> ✅ "Cô không chịu dừng lại."
+
+> ❌ "Càng không nhận được câu trả lời mong muốn, cô lại càng muốn biết cho bằng được."
+> ✅ "Càng không có được đáp án, cô lại càng muốn biết."
+
+### Khi nào dùng câu ngắn:
+- Kết thúc đoạn hội thoại → tạo dư âm
+- Nhân vật đang đau/buồn/sốc → nhịp gãy = cảm xúc vỡ
+- Hành động dứt khoát → câu ngắn = quyết đoán
+- Tiết lộ twist → câu ngắn = impact
+
+---
+
+## 10. Tin người đọc — Không giải thích thừa
+
+Nếu ngữ cảnh đủ rõ, **KHÔNG** thêm lời giải thích.
+
+### ❌ SAI — Giải thích dư:
+> Hai chữ "rất gần", cô hơi nhấn mạnh giọng **khi nói**.
+> Cô hy vọng anh **sẽ hiểu được rằng** cô đang bận tâm.
+
+### ✅ ĐÚNG — Gọn:
+> Hai chữ "rất gần", cô cố ý nhấn mạnh.
+> Cô muốn anh hiểu, cô để tâm.
+
+### Các pattern "giải thích thừa" cần bỏ:
+| Thừa | Gọn |
+|---|---|
+| "khi nói" (sau dialogue) | bỏ |
+| "sẽ hiểu được rằng" | "hiểu" |
+| "nhưng rất nhanh đã bị cô kìm nén ép ngược trở lại" | "nhưng cô nén lại ngay" |
+| "cô hy vọng anh sẽ..." | "cô muốn anh..." |
+| "giống hệt như một..." | "như..." |
+| "dường như đang..." | "đang..." |
+
+---
+
+## 11. Xưng hô — Chọn cách gọi gần gũi nhất
+
+Dịch danh xưng theo **cách người Việt thực sự gọi**, không dịch sát.
+
+| Nguyên văn | ❌ Dịch sát | ✅ Tự nhiên |
+|---|---|---|
+| 沈小姐 (Thẩm tiểu thư) | Thẩm tiểu thư | **Cô Thẩm** |
+| 宋少爷 (Tống thiếu gia) | Tống thiếu gia | **cậu chủ** (người nhà) hoặc **Tống thiếu** (ngoài) |
+| 颜总监 (Nhan tổng giám) | Nhan tổng giám | **giám đốc Nhan** |
+| Bella姐 | chị Bella | **chị Bella** ✅ (giữ) |
+
+**Lưu ý:** "Tống Đổng" (宋董) giữ nguyên — đây là cách gọi đã được user approve.
+
+---
+
+## 12. Từ thừa phải cắt — Danh sách cụ thể
+
+Những từ/cụm sau **làm câu nặng** mà không thêm nghĩa:
+
+| Từ thừa | Xử lý |
+|---|---|
+| "của anh/cô" khi đã rõ chủ ngữ | bỏ |
+| "một cái/một chiếc" trước danh từ đã xác định | bỏ "một" |
+| "vô cùng" / "cực kỳ" lặp | thay bằng từ cụ thể hoặc bỏ |
+| "bất luận là... hay là..." | "dù... hay..." |
+| "thế nhưng" liên tiếp | xen kẽ: "nhưng", "song", "thế mà", "vậy mà" |
+| "hơn nữa" đầu câu >2 lần/trang | thay: "lại còn", "thêm nữa", hoặc bỏ |
+| "đối phương" thay cho tên | dùng tên nhân vật hoặc "cô/anh ấy" |
+| "cho cô nghe" / "cho anh biết" | thường bỏ được |
+| "đều là" / "chính là" khi không cần nhấn mạnh | bỏ |
+
+---
+
+## 13. Onomatopoeia — Chọn âm thanh đúng
+
+| Nguyên văn | ❌ | ✅ |
+|---|---|---|
+| 咔 (bật lửa) | "cạch" | **"tách"** |
+| 嗒嗒 (gót giày) | "cộp cộp" | **"cốp cốp"** hoặc **"lộp cộp"** |
+| 哗 (nước) | "ào ào" | **"rào rào"** hoặc **"xối xả"** |
+| 嗯 (ừ nhẹ) | "ừm" | **"ừ"** hoặc **"ờ"** |
+
+---
+
+## 14. Checklist trước khi nộp bản dịch
+
+### Bắt buộc:
 - [ ] Đọc to 5 đoạn ngẫu nhiên — có vấp không?
 - [ ] Câu nào >50 từ chưa tách?
-- [ ] "Tống Đổng" viết hoa đúng (không phải "Tống đổng")?
-- [ ] Có dùng "vô cùng" quá 3 lần không?
-- [ ] Đối thoại có giống người thật nói không?
-- [ ] Từ Hán Việt nặng đã thay bằng thuần Việt chưa?
+- [ ] "Tống Đổng" viết hoa đúng?
+- [ ] "vô cùng" ≤ 3 lần/chương?
+- [ ] Đối thoại giống người thật nói?
+- [ ] Từ Hán Việt nặng đã thay?
+
+### Nâng cao (so với bản tham khảo):
+- [ ] Có câu 3-5 từ tạo nhịp ở các đoạn cảm xúc?
+- [ ] Không giải thích thừa khi context rõ?
+- [ ] "Cô Thẩm" thay "Thẩm tiểu thư"?
+- [ ] "cậu chủ" thay "Tống thiếu gia" (khi thư ký nói)?
+- [ ] Bỏ "khi nói", "được rằng", "đối phương"?
+- [ ] Âm thanh: "tách" không phải "cạch"?
+
