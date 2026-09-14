@@ -34,6 +34,17 @@ if sys.platform == "win32":
         pass
 
 from dataclasses import dataclass
+try:
+    from .intro_emoji_decorator import process_intro_html
+except Exception:
+    try:
+        from intro_emoji_decorator import process_intro_html
+    except Exception:
+        try:
+            from scripts.intro_emoji_decorator import process_intro_html
+        except Exception:
+            process_intro_html = None
+
 
 DEFAULT_INTRO_COLOR = "#C49C13"
 DEFAULT_CHAP_COLOR = "#EF729E"
@@ -78,6 +89,8 @@ class StyleConfig:
     border_intro: Optional[str] = None
     bg_intro: Optional[str] = None
     border_chap: Optional[str] = None
+    full_style: bool = False
+    decorate_intro: bool = True
 
     def __post_init__(self):
         self.intro_color = normalize_hex(self.intro_color, DEFAULT_INTRO_COLOR)
@@ -108,6 +121,44 @@ class StyleConfig:
             self.border_chap = normalize_hex(self.border_chap, DEFAULT_BORDER_CHAP)
 
     def get_intro_css_block(self) -> str:
+        if not self.full_style:
+            return f"""
+<style type="text/css">/* Batch Restyle */
+body, body * {{
+    color: {self.intro_color} !important;
+}}
+h1, h2, h3, h4, h5, h6, .intro-title, .intro-main-title {{
+    text-align: center !important;
+    text-decoration: none !important;
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    padding-bottom: 0 !important;
+}}
+a, a:link, a:visited {{
+    text-decoration: none !important;
+}}
+hr {{
+    display: none !important;
+    border: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    visibility: hidden !important;
+}}
+.notice-box, .meta-box, .author-note, [class*="box"], [class*="note"] {{
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-left: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}}
+</style>
+"""
         return f"""
 <style type="text/css">/* Batch Restyle */
 body, body * {{ color: {self.intro_color} !important; }}
@@ -141,6 +192,19 @@ p {{
 """
 
     def get_nav_css_block(self) -> str:
+        if not self.full_style:
+            return f"""
+<style type="text/css">/* Batch Restyle */
+nav, nav h1, nav h2, nav h3, nav ol, nav ul, nav li, nav a {{
+    color: {self.intro_color} !important;
+    text-decoration: none !important;
+}}
+a, a:link, a:visited {{
+    color: {self.intro_color} !important;
+    text-decoration: none !important;
+}}
+</style>
+"""
         return f"""
 <style type="text/css">/* Batch Restyle */
 nav, nav h1, nav h2, nav h3, nav ol, nav ul, nav li, nav a {{
@@ -154,6 +218,39 @@ nav a:link, nav a:visited, nav a:hover, nav a:active {{
 """
 
     def get_chap_css_block(self) -> str:
+        if not self.full_style:
+            return f"""
+<style type="text/css">/* Batch Restyle */
+h1, h2, h3, h4, h5, h6, .chapter-title, .chapter-title-heading, .entry-title, .chap-title, .title-chap {{
+    color: {self.chap_color} !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    padding-bottom: 0 !important;
+}}
+hr {{
+    display: none !important;
+    border: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    visibility: hidden !important;
+}}
+.notice-box, .meta-box, .author-note, [class*="box"], [class*="note"] {{
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-left: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}}
+</style>
+"""
         return f"""
 <style type="text/css">/* Batch Restyle */
 h1, h2, h3, .chapter-title, .chapter-title-heading, .entry-title {{
@@ -174,6 +271,49 @@ body.chapter-page p, p {{
 """
 
     def get_append_css_rules(self) -> str:
+        if not self.full_style:
+            return f"""
+/* === Batch Restyle Colors === */
+nav, nav h1, nav h2, nav h3, nav ol, nav ul, nav li, nav a {{
+    color: {self.intro_color} !important;
+    text-decoration: none !important;
+}}
+body.intro-page, body.intro-page * {{
+    color: {self.intro_color} !important;
+}}
+body.intro-page h1, body.intro-page h2, body.intro-page h3, .intro-title, .intro-main-title {{
+    text-align: center !important;
+    border: none !important;
+    border-bottom: none !important;
+    text-decoration: none !important;
+}}
+body.chapter-page h1, body.chapter-page h2, .chapter-title, .chapter-title-heading, .entry-title, .chap-title, .title-chap,
+h1, h2, h3, h4, h5, h6 {{
+    color: {self.chap_color} !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    padding-bottom: 0 !important;
+}}
+hr {{
+    display: none !important;
+    border: none !important;
+    height: 0 !important;
+}}
+.notice-box, .meta-box, .author-note, [class*="box"], [class*="note"] {{
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-left: none !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}}
+"""
         return f"""
 /* === Batch Restyle Colors === */
 nav, nav h1, nav h2, nav h3, nav ol, nav ul, nav li, nav a {{
@@ -237,10 +377,10 @@ def is_chapter_file(filename: str) -> bool:
 
 def strip_style_from_html(html_str: str) -> str:
     # Xóa bất kỳ khối style nào trước đó đã từng inject bởi script
-    html_str = re.sub(r'<style type="text/css">\s*/\* Batch Restyle.*?</style>\s*', "", html_str, flags=re.DOTALL)
-    html_str = re.sub(r'<style type="text/css">\s*body,\s*body\s*\*.*?</style>\s*', "", html_str, flags=re.DOTALL)
-    html_str = re.sub(r'<style type="text/css">\s*nav,\s*nav\s*h1.*?</style>\s*', "", html_str, flags=re.DOTALL)
-    html_str = re.sub(r'<style type="text/css">\s*h1,\s*h2,\s*h3,\s*\.chapter-title.*?</style>\s*', "", html_str, flags=re.DOTALL)
+    html_str = re.sub(r'<style[^>]*>\s*/\* Batch Restyle.*?</style>\s*', "", html_str, flags=re.DOTALL)
+    html_str = re.sub(r'<style[^>]*>\s*body,\s*body\s*\*.*?</style>\s*', "", html_str, flags=re.DOTALL)
+    html_str = re.sub(r'<style[^>]*>\s*nav,\s*nav\s*h1.*?</style>\s*', "", html_str, flags=re.DOTALL)
+    html_str = re.sub(r'<style[^>]*>\s*h1,\s*h2,\s*h3.*?</style>\s*', "", html_str, flags=re.DOTALL)
     return html_str
 
 
@@ -319,22 +459,71 @@ def process_single_epub(
 
                         elif is_intro_file(item.filename):
                             text = data.decode("utf-8", errors="replace")
+                            if cfg.decorate_intro and process_intro_html is not None:
+                                file_seed = hash(epub_path.name) & 0xFFFFFFFF
+                                text, _ = process_intro_html(text, seed=file_seed)
+                            if not cfg.full_style:
+                                # Clean mode: Triệt để loại bỏ thẻ <hr> (gạch phân cách) và viền inline
+                                text = re.sub(r'<hr\s*/?>', '', text, flags=re.IGNORECASE)
+                                text = re.sub(r'border-bottom\s*:\s*[^;"]+;?', '', text, flags=re.IGNORECASE)
                             # Thay thế màu cũ nếu có
                             text = re.sub(r'#A06F7B|#a06f7b|#6A74A8|#6a74a8|#C49C13|#c49c13', cfg.intro_color, text)
-                            text = re.sub(r'#dfcbd0|#DFCBD0|#c4c9e2|#C4C9E2|#eadcac|#EADCAC', cfg.border_intro, text)
-                            text = re.sub(r'#faf5f6|#FAF5F6|#f7f8fc|#F7F8FC|#fcfaf3|#FCFAF3', cfg.bg_intro, text)
+                            if cfg.full_style:
+                                text = re.sub(r'#dfcbd0|#DFCBD0|#c4c9e2|#C4C9E2|#eadcac|#EADCAC', cfg.border_intro, text)
+                                text = re.sub(r'#faf5f6|#FAF5F6|#f7f8fc|#F7F8FC|#fcfaf3|#FCFAF3', cfg.bg_intro, text)
                             text = inject_style_into_head(text, cfg.get_intro_css_block())
                             data = text.encode("utf-8")
 
                         elif is_chapter_file(item.filename):
                             text = data.decode("utf-8", errors="replace")
+                            if not cfg.full_style:
+                                # Clean mode: Triệt để loại bỏ thẻ <hr> và viền inline
+                                text = re.sub(r'<hr\s*/?>', '', text, flags=re.IGNORECASE)
+                                text = re.sub(r'border-bottom\s*:\s*[^;"]+;?', '', text, flags=re.IGNORECASE)
                             text = re.sub(r'#EF729E|#ef729e', cfg.chap_color, text)
-                            text = re.sub(r'#ffd1df|#FFD1DF', cfg.border_chap, text)
+                            if cfg.full_style:
+                                text = re.sub(r'#ffd1df|#FFD1DF', cfg.border_chap, text)
                             text = inject_style_into_head(text, cfg.get_chap_css_block())
                             data = text.encode("utf-8")
 
                         elif item.filename.endswith(".css"):
                             text = data.decode("utf-8", errors="replace")
+                            if not cfg.full_style:
+                                # Clean mode: Triệt để loại bỏ css gạch (border-bottom) và viền/nền các box
+                                text = re.sub(r'border-bottom\s*:\s*[^;]+;', 'border-bottom: none;', text, flags=re.IGNORECASE)
+                                text = re.sub(r'hr\s*\{[^}]*\}', 'hr { display: none !important; border: none !important; height: 0 !important; }', text, flags=re.DOTALL | re.IGNORECASE)
+                                for box_kw in ['meta-box', 'notice-box', 'author-note', 'info-box', 'warning-box']:
+                                    text = re.sub(
+                                        rf'(\.{box_kw}\s*\{{[^}}]*?)(background(?:-color)?\s*:\s*[^;]+;)',
+                                        r'\1background-color: transparent;',
+                                        text,
+                                        flags=re.DOTALL | re.IGNORECASE,
+                                    )
+                                    text = re.sub(
+                                        rf'(\.{box_kw}\s*\{{[^}}]*?)(border(?:-left|-top|-right|-bottom)?\s*:\s*[^;]+;)',
+                                        r'\1border: none; border-left: none;',
+                                        text,
+                                        flags=re.DOTALL | re.IGNORECASE,
+                                    )
+                                    text = re.sub(
+                                        rf'(\.{box_kw}\s*\{{[^}}]*?)(border-radius\s*:\s*[^;]+;)',
+                                        r'\1border-radius: 0;',
+                                        text,
+                                        flags=re.DOTALL | re.IGNORECASE,
+                                    )
+                                    text = re.sub(
+                                        rf'(\.{box_kw}\s*\{{[^}}]*?)(box-shadow\s*:\s*[^;]+;)',
+                                        r'\1box-shadow: none;',
+                                        text,
+                                        flags=re.DOTALL | re.IGNORECASE,
+                                    )
+                                    text = re.sub(
+                                        rf'(\.{box_kw}\s*\{{[^}}]*?)(padding\s*:\s*[^;]+;)',
+                                        r'\1padding: 0;',
+                                        text,
+                                        flags=re.DOTALL | re.IGNORECASE,
+                                    )
+
                             if "/* === Batch Restyle Colors === */" not in text:
                                 text += "\n" + cfg.get_append_css_rules()
                             else:
@@ -347,10 +536,12 @@ def process_single_epub(
                                 )
                             # Thay thế mã màu cũ nếu có
                             text = re.sub(r'#A06F7B|#a06f7b|#6A74A8|#6a74a8|#C49C13|#c49c13', cfg.intro_color, text)
-                            text = re.sub(r'#dfcbd0|#DFCBD0|#c4c9e2|#C4C9E2|#eadcac|#EADCAC', cfg.border_intro, text)
-                            text = re.sub(r'#faf5f6|#FAF5F6|#f7f8fc|#F7F8FC|#fcfaf3|#FCFAF3', cfg.bg_intro, text)
+                            if cfg.full_style:
+                                text = re.sub(r'#dfcbd0|#DFCBD0|#c4c9e2|#C4C9E2|#eadcac|#EADCAC', cfg.border_intro, text)
+                                text = re.sub(r'#faf5f6|#FAF5F6|#f7f8fc|#F7F8FC|#fcfaf3|#FCFAF3', cfg.bg_intro, text)
                             text = re.sub(r'#EF729E|#ef729e', cfg.chap_color, text)
-                            text = re.sub(r'#ffd1df|#FFD1DF', cfg.border_chap, text)
+                            if cfg.full_style:
+                                text = re.sub(r'#ffd1df|#FFD1DF', cfg.border_chap, text)
                             data = text.encode("utf-8")
 
                     zout.writestr(item.filename, data, compress_type=compress)
@@ -433,10 +624,23 @@ def main():
         help="Tùy chọn: Mã màu viền gạch dưới tiêu đề chương (mặc định tự động tính theo chap-color)",
     )
     parser.add_argument(
+        "--full-style",
+        action="store_true",
+        help="Bật thêm các tùy biến nâng cao (căn lề justify, lùi đầu dòng 1.5em, viền gạch dưới, khung meta-box)",
+    )
+    parser.add_argument(
         "--rollback",
         "--revert",
         action="store_true",
         help="Gỡ bỏ toàn bộ CSS/style đã thêm bởi script, khôi phục lại EPUB nguyên bản ban đầu",
+    )
+
+    parser.add_argument(
+        "--no-emoji",
+        dest="decorate_intro",
+        action="store_false",
+        default=True,
+        help="Khong tu dong chen emoji Hoa va La vao chuong gioi thieu",
     )
 
     args = parser.parse_args()
@@ -447,6 +651,8 @@ def main():
         border_intro=args.border_intro,
         bg_intro=args.bg_intro,
         border_chap=args.border_chap,
+        full_style=args.full_style,
+        decorate_intro=args.decorate_intro,
     )
 
     epub_files: List[Path] = []
@@ -513,8 +719,10 @@ def main():
         print(f"[*] CHẾ ĐỘ: ROLLBACK (Gỡ bỏ toàn bộ style đã inject, khôi phục nguyên bản)")
     else:
         print(f"[*] CẤU HÌNH GIAO DIỆN (Color Theme):")
-        print(f"    - Intro & Mục lục (intro-color) : {style_config.intro_color} (Viền: {style_config.border_intro}, Nền: {style_config.bg_intro})")
-        print(f"    - Tiêu đề chương (chap-color)   : {style_config.chap_color} (Viền: {style_config.border_chap})")
+        mode_str = "Full Style (Căn lề, lùi đầu dòng, viền, khung)" if style_config.full_style else "Clean Mode (Chỉ đổi màu Intro & Tiêu đề chương, giữ sạch 100% nội dung)"
+        print(f"    - Chế độ                        : {mode_str}")
+        print(f"    - Intro & Mục lục (intro-color) : {style_config.intro_color}")
+        print(f"    - Tiêu đề chương (chap-color)   : {style_config.chap_color}")
     print(f"[*] Tìm thấy tổng cộng: {total_found:,} file EPUB.")
 
     if args.sample and args.sample > 0 and len(epub_files) > args.sample:
