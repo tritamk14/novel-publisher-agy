@@ -9,8 +9,8 @@ terms:
 
   - category: "places"
     original: "港岛 / 港城"
-    translated: "Cảng thành"
-    note: "Hồng Kông — dùng nhất quán 'Cảng thành', không dùng 'Hong Kong'"
+    translated: "Hồng Kông"
+    note: "Hồng Kông — dùng nhất quán 'Hồng Kông', không dùng 'Hong Kong'"
 
   - category: "places"
     original: "半山区 / 半山"
@@ -109,7 +109,7 @@ terms:
   - category: "objects"
     original: "港1"
     translated: "Cảng 1"
-    note: "Biển số xe của Tống Bạc Lễ — 'Cảng thành Cảng 1, Cảng thành số 1'. Biểu tượng quyền lực tối thượng."
+    note: "Biển số xe của Tống Bạc Lễ — 'Hồng Kông Cảng 1, Hồng Kông số 1'. Biểu tượng quyền lực tối thượng."
 
   - category: "objects"
     original: "蔷薇花"
